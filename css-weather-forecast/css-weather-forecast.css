@@ -31,9 +31,8 @@ span {
 	font-size: 0;
 	padding-left: 0;
 	margin: 0 auto;
-    max-width: 800px;
-	border-left: 4px solid #fff;
-	border-bottom: 4px solid #fff;
+	max-width: 800px;
+	border: 2px solid #fff;
 }
 .list-items:hover li {
 	opacity: 0.6;
@@ -42,8 +41,7 @@ span {
 	display: inline-block;
 	font-size: 18px;
 	text-align: center;
-	border-top: 4px solid #fff;
-	border-right: 4px solid #fff;
+	border: 2px solid #fff;
 }
 .list-items li:hover {
 	opacity: 1;
@@ -96,5 +94,5 @@ li:nth-child(11)  {
 .app-footer {
 	font-size: 16px;
 	margin: 20px auto;
-    max-width: 800px;
+	max-width: 800px;
 }
