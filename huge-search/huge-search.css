@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+body, ul, h5 {
+	margin: 0;
+} 
+body {
+	font-family: Arial, sans-serif;
+	background-color: #F1F1F1;
+}
+main {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+.search-nav {
+	margin: 30px 0 40px 0;
+	width: 100%;
+	position: relative;
+}
+.search-nav input {
+	width: 100%;
+	background-color: transparent;
+	border: 0;
+	font-size: 98px;
+	color: #ec5a62;
+	font-weight: 700;
+	padding-right: 90px;
+}
+.search-button {
+	background-image: url('huge-search-img/img/magnifier.svg');
+	width: 80px;
+	height: 80px;
+	border: 0;
+	padding: 0;
+	position: absolute;
+	top: calc(50% - 40px);
+	right: 0px;
+	overflow: hidden;
+	background-color: transparent;
+	transition: all .1s ease-in;
+}
+.search-button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	right: 3px;
+}
+::-webkit-input-placeholder {
+  	font-family:  Arial, sans-serif;
+  	color: #c2c2c2;
+}
+::-moz-placeholder {
+	font-family:  Arial, sans-serif;
+ 	color: #c2c2c2;
+}
+:-ms-input-placeholder {
+	font-family:  Arial, sans-serif;
+  	color: #c2c2c2;
+}
+:-moz-placeholder {
+	font-family:  Arial, sans-serif;
+  	color: #c2c2c2;
+}
+.search-content {
+	width: 100%;
+	margin-bottom: 50px;
+	font-size: 0;
+}
+article.column {
+	width: 30%;
+	display: inline-block;
+}
+article:nth-child(2) {
+	margin: 0 5%;
+}
+ul {
+	padding-left: 0;
+	list-style: none;
+	text-align: left;
+}
+article h3 {
+	color: #c2c2c2;
+	text-align: left;
+	margin-top: 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+ul li img {
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+article:first-child img {
+	border-radius: 50%;
+}
+ul li h5 {
+	color: inherit; 
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	padding-left: 10px;
+	font-weight: 700;
+	width: calc(100% - 50px - 20px);
+}
+ul li a {
+	text-decoration: none;
+	width: 100%;
+	display: inline-block;
+	padding: 10px;
+	color: #90919A;
+	background-color: rgba(118,117,128,0.05);
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+ul li a:hover {
+	text-decoration: none;
+	color: #ec5a62;
+	background-color: rgba(118,117,128,0.1);
+	cursor: pointer;
+}
