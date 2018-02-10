@@ -85,6 +85,9 @@ header p {
 	margin-bottom: 30px;
 }
 .works-img {
+	background-image: url('img/image.png');
+	width: 900px;
+	height: 852px;
 	position: absolute;
 	top: -180px;
 	left: 340px;
