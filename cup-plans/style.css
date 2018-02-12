@@ -1,0 +1,97 @@
+ @font-face {
+	 font-family:"Miso Bold";
+	 src:url("fonts/Miso_Bold/miso-bold.eot") format("eot"),
+	 url("fonts/Miso_Bold/miso-bold.woff") format("woff"),
+	 url("fonts/Miso_Bold/miso-bold.ttf") format("truetype"),
+	 url("fonts/Miso_Bold/miso-bold.svg#Miso-Bold") format("svg");
+	 font-weight:normal;
+	 font-style:normal;
+}
+@font-face {
+	font-family:"Miso";
+	src:url("fonts/Miso/miso.eot") format("eot"),
+	url("fonts/Miso/miso.woff") format("woff"),
+	url("fonts/Miso/miso.ttf") format("truetype"),
+	url("fonts/Miso/miso.svg#Miso") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body, main, section {
+	margin: 0;
+}
+body {
+	max-height: 100vh;
+	width: 100%;
+}
+main {
+	background-color: #f5ee70;
+	height: 600px;
+	width: 1200px;
+	margin: 30px auto 0;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+section {
+	flex-basis: 361px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.2);
+}
+.bronze-cup-section, .silver-cup-section {
+	min-height: 441px;
+	padding: 42px 0 36px 0;
+}
+.gold-cup-section {
+	min-height: 500px;
+	padding: 52px 0 55px 0;
+}
+.price {
+	font-family:"Miso Bold";
+	font-size: 70px;
+	line-height: 53px;
+	color: #02995b;
+	letter-spacing: 1.75px;
+}
+.img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 135px;
+	height: 134px;
+}
+.bronze-cup__img {
+	background-image: url('img/3-layers3.png');
+}
+.gold-cup__img {
+	background-image: url('img/3-layers.png');
+}
+.silver-cup__img {
+	background-image: url('img/3-layers2.png');
+}
+.wrapper {
+	display: flex;
+	width: 156px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.name {
+	font-size: 56px;
+	font-family:"Miso";
+	padding-bottom: 20px;
+}
+.text {
+	font-size: 24px;
+	font-family:"Miso";
+}
+
