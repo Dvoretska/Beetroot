@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.container > [class*="grid-"] {
+	float: left;
+	background-size: cover;
+	background-position: center;
+}
+.grid-img1 {
+	background: url('http://via.placeholder.com/600x150/A2E8BC') no-repeat;
+	border: 10px solid #fff;
+	width: 600px;
+	height: 150px;
+}
+.grid-img2 {
+	background: url('http://via.placeholder.com/600x150/56CBB8') no-repeat;
+	border: 10px solid #fff;
+	width: 600px;
+	height: 150px;
+}
+.grid-img3 {
+	background: url('http://via.placeholder.com/600x320/FF4585/ffffff') no-repeat;
+	border: 10px solid #fff;
+	width: 600px;
+	height: 320px;
+}
+.grid-img4 {
+	background: url('http://via.placeholder.com/200x165/9E6CF4/ffffff') no-repeat;
+	border: 10px solid #fff;
+	width: 200px;
+	height: 165px;
+}
+.grid-img5 {
+	background: url('http://via.placeholder.com/300x150/FBD159') no-repeat;
+	border-top: 5px solid #fff;
+	border-right: 10px solid #fff;
+	border-left: 10px solid #fff;
+	border-bottom: 10px solid #fff;
+	width: 300px;
+	height: 150px;
+	margin-top: 5px;
+}
+.grid-img6 {
+	background: url('http://via.placeholder.com/400x185/6777CA/ffffff') no-repeat;
+	border-top: 10px solid #fff;
+	border-right: 10px solid #fff;
+	border-left: 10px solid #fff;
+	border-bottom: 0 solid #fff;
+	width: 400px;
+	height: 185px;
+}
+.grid-img7 {
+	background: url('http://via.placeholder.com/200x195/6777CA/ffffff') no-repeat;
+	border: 10px solid #fff;
+	width: 200px;
+	height: 195px;
+}
+.grid-img8 {
+	background: url('http://via.placeholder.com/200x145/7900B0/ffffff') no-repeat;
+	border: 10px solid #fff;
+	width: 200px;
+	height: 145px;
+}
+.grid-img9 {
+	background: url('http://via.placeholder.com/600x135/7900B0/ffffff') no-repeat;
+	border-top: 10px solid #fff;
+	border-right: 10px solid #fff;
+	border-left: 10px solid #fff;
+	border-bottom: 0 solid #fff;
+	width: 600px;
+	height: 135px;
+}
+.grid-img10 {
+	background: url('http://via.placeholder.com/400x135/7900B0/ffffff') no-repeat;
+	border-top: 10px solid #fff;
+	border-right: 10px solid #fff;
+	border-left: 10px solid #fff;
+	border-bottom: 0 solid #fff;
+	width: 400px;
+	height: 135px;
+}
