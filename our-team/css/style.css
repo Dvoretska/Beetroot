@@ -111,16 +111,27 @@ body .container .slider .slide .content .wrapper {
   width: 50%;
 }
 
-body .container .slider .slide .content .wrapper .img-wrapper {
-  display: inline-block;
+body .container .slider .slide .content .wrapper .cool-border {
+  height: 418px;
+  width: 418px;
+  background-image: linear-gradient(to right, #ffcc00 25%, transparent 25%, transparent 75%, #ffcc00 75%, #ffcc00 100%), linear-gradient(to right, #ffcc00 25%, transparent 25%, transparent 75%, #ffcc00 75%, #ffcc00 100%), linear-gradient(to bottom, #ffcc00 25%, transparent 25%, transparent 75%, #ffcc00 75%, #ffcc00 100%), linear-gradient(to bottom, #ffcc00 25%, transparent 25%, transparent 75%, #ffcc00 75%, #ffcc00 100%);
+  background-position: left top, left bottom, left top, right top;
+  background-size: 418px 1px, 418px 1px, 1px 418px, 1px 418px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 42px;
+}
+
+body .container .slider .slide .content .wrapper .cool-border .img {
   background-image: url("../img/img1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 418px;
-  height: 418px;
-  margin-right: 97px;
-  margin-left: 42px;
+  width: 388px;
+  height: 388px;
+  border: 1px solid #ffcc00;
 }
 
 body .container .slider .slide .content .text-wrapper {
