@@ -1,0 +1,225 @@
+/*#shape-icon-6 .cls-1, #shape-icon-6 .cls-2, #shape-icon-6 .cls-3 {
+	fill-rule: evenodd;
+}*/
+#shape-icon-6 .cls-2{
+	stroke: #3c3c3c;
+}
+						
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+body{
+	min-height:100vh;
+	font-family: 'Lato', Arial, sans-serif;
+	width: 1920px;
+}
+.border {
+	width:902px;
+	background-image: linear-gradient(to right,  #3c3c3c 25%, transparent 25%, transparent 75%, #3c3c3c 75%, #3c3c3c 100%),
+               linear-gradient(to right, #3c3c3c 0%, #3c3c3c 100%),
+               linear-gradient(to bottom, #3c3c3c 0%, #3c3c3c 100%),
+               linear-gradient(to bottom, #3c3c3c 0%, #3c3c3c 100%);
+	background-position: left top, left bottom, left top, right top;
+	background-size: 902px 2px, 902px 2px, 2px 902px, 2px 902px;
+	background-repeat:  repeat-x, repeat-x, repeat-y, repeat-y;
+}
+.border-white {
+	background-image: linear-gradient(to right,  #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff 100%),
+	               linear-gradient(to right,  #fff 0%, #fff 100%),
+	               linear-gradient(to bottom,  #fff 0%, #fff 100%),
+	               linear-gradient(to bottom,  #fff 0%, #fff 100%);
+}
+header, section, div.wrapper, .border, footer {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 5.4px;
+	display: inline-block;
+	line-height: 0;
+	color: #3c3c3c;
+}
+.text {
+	font-size: 16px;
+	font-weight: 300;
+	white-space: pre-line;
+	text-align: center;
+	color: #3c3c3c;
+}
+
+/*HEADER*/
+header {
+    height: 1072px;
+    background: url("img/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 285px;
+}
+.header-title {
+	width: 591px;
+	font-size: 54px;
+	font-weight: bold;
+	letter-spacing: 8.6px;
+	text-align: center;
+	color: #ffffff;
+	margin: 76px 0 35px;
+}
+.header-description {
+	width: 579px;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.93;
+	letter-spacing: 0.9px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 235px;
+}
+.svg-scroll {
+	margin-bottom: 115px;
+}
+/*HEADER*/
+/*ABOUT*/
+#about {
+	padding: 160px 0 153px;
+}
+#about .text {
+	width: 553px;
+	line-height: 1.5;
+	margin: 67px 0 29px;
+}
+/*ABOUT*/
+/*SERVICES*/
+#services {
+	background: url("img/services.jpg") no-repeat;
+    background-size: cover;
+    padding: 128px 0 109px;
+}
+#services .title {
+	color: #ffffff;
+}
+#services .text {
+	width: 544px;
+	line-height: 1.62;
+	color: #ffffff;
+	margin: 66px 0 30px;
+}
+/*SERVICES*/
+/*WORKS*/
+#works {
+    padding: 119px 0 114px;
+}
+#works .title {
+	margin-bottom: 120px;
+}
+.wrapper {
+    width: 555px;
+    margin-bottom: 90px;
+}
+.wrapper .name {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 3.2px;
+	color: #3c3c3c;
+}
+.wrapper .name1 {
+	margin: 33px 0 25px;
+}
+.wrapper .name2 {
+	margin: 30px;
+}
+.wrapper .name3 {
+	margin: 38px 0 33px;
+}
+.wrapper .text {
+	font-size: 14px;
+	line-height: 1.85;
+	letter-spacing: normal;
+}
+/*WORKS*/
+/*GALLERY*/
+div#gallery {
+	display: grid;
+	grid-template-columns: 548px 802px 550px;
+	grid-template-rows: 237px 237px;
+	grid-gap: 10px;
+}
+.img1 {
+	background-image: url("img/5.png");
+}
+.img2 {
+	background-image: url("img/3.png");
+}
+.img3 {
+	background-image: url("img/4.png");
+}
+.img4 {
+	background-image: url("img/2.png");
+}
+.img5 {
+	background-image: url("img/1.png");
+}
+.img6 {
+	background-image: url("img/6.png");
+}
+.gallery-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*GALLERY*/
+/*CONTACTS*/
+#contacts {
+    padding: 119px 0 47px;
+}
+#contacts .title {
+	font-size: 30px;
+	letter-spacing: 4.8px;
+	margin-bottom: 59px;
+}
+#contacts .text {
+	width: 543px;
+	line-height: 1.62;
+	letter-spacing: normal;
+}
+#contacts .cta {
+	width: 395px;
+	height: 58px;
+	background-color: #3c3c3c;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 2.6px;
+	text-align: center;
+	color: #ffffff;
+	border: none;
+	margin: 38px 0 50px;
+}
+#contacts .cta:hover {
+	cursor: pointer;
+}
+/*CONTACTS*/
+/*FOOTER*/
+footer {
+	flex-direction: row;
+    margin-bottom: 77px;
+}
+footer span {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #3c3c3c;
+	margin-left: 36px;
+}
+/*FOOTER*/
+
