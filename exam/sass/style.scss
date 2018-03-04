@@ -1,7 +1,7 @@
 $josefinSans: 'Josefin Sans', Arial, sans-serif;
 $aleo: 'Aleo', Times New Roman, serif;
 
-$main_background_color: #7F00FF;
+$main_background_color: #5474fd;
 @font-face {
 	 font-family:"Aleo";
 	 src:url("../assets/fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.eot") format("eot"),
@@ -37,284 +37,172 @@ $main_background_color: #7F00FF;
 body {
 	min-height: 100vh;
 	width: 100%;
-	margin: 5px;
+	border: 5px solid #fff;
 	color: #fff;
-		header {
-			background-image: url('../assets/img/Header_bg.png');
-			@include full_background_img;
-			width: 100%;
-			@include column_flex;
-			padding: 265px 0 134px;
-			.header__title {
-				font-family: $josefinSans;
-				font-size: 48px;
-				font-weight: 700;
-				line-height: 0.54;
-				letter-spacing: 4.8px;
-				text-transform: uppercase;
-				margin-bottom: 15px;
-			}
-			.header__description {
-				font-family: $josefinSans;
-				font-size: 22px;
-				font-weight: 400;
-				line-height: 1.18;
-				letter-spacing: 6.8px;
-				margin-bottom: 45px;
-			}
-			.header__search {
-				position: relative;
-				input {
-					width: 650px;
-					height: 60px;
-					background-color: #fff;
-					border: none;
-					padding: 0 150px 0 126px;
+	overflow-x: hidden;
+	header {
+		background-image: url('../assets/img/Header_bg.png');
+		@include full_background_img;
+		width: 100%;
+		@include column_flex;
+		padding: 265px 0 134px;
+		.header__title {
+			font-family: $josefinSans;
+			font-size: 48px;
+			font-weight: 700;
+			line-height: 0.54;
+			letter-spacing: 4.8px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+		.header__description {
+			font-family: $josefinSans;
+			font-size: 22px;
+			font-weight: 400;
+			line-height: 1.18;
+			letter-spacing: 6.8px;
+			margin-bottom: 45px;
+		}
+		.header__search {
+			position: relative;
+			input {
+				width: 650px;
+				height: 60px;
+				background-color: #fff;
+				border: none;
+				padding: 0 150px 0 126px;
 
-					&::placeholder {
-						font-family: $josefinSans;
-						font-size: 14px;
-						font-weight: 400;
-						letter-spacing: 2.8px;
-						color: #999999;
-					}
-				}
-				button {
-					position: absolute;
-					top: 0;
-					right: 0;
-					width: 150px;
-					height: 60px;
-					cursor: pointer;
-					background-color: $main_background_color;
-					border: solid 2px #ffffff;
-					font-family: $aleo;
-					font-size: 14px;
-					font-weight: normal;
-					line-height: 1.86;
-					letter-spacing: 1.4px;
-					padding-right: 20px;
-					color: #fff;
-				}
-				img {
-					width: 20px;
-					height: 22px;
-					position: absolute;
-					top: 50%;
-					right: 18px;
-					transform: translateY(-50%);
-				}
-			}
-			.header__scroll {
-				text-align: center;
-				&:hover {
-					cursor: pointer;
-				}
-				p {
+				&::placeholder {
 					font-family: $josefinSans;
 					font-size: 14px;
 					font-weight: 400;
-					line-height: 1.86;
 					letter-spacing: 2.8px;
-					margin-top: 115px;
+					color: #999999;
 				}
+			}
+			button {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 150px;
+				height: 60px;
+				cursor: pointer;
+				background-color: $main_background_color;
+				border: solid 2px #ffffff;
+				font-family: $aleo;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 1.86;
+				letter-spacing: 1.4px;
+				padding-right: 20px;
+				color: #fff;
+			}
+			img {
+				width: 20px;
+				height: 22px;
+				position: absolute;
+				top: 50%;
+				right: 18px;
+				transform: translateY(-50%);
 			}
 		}
-		nav {
-			width: 100%;
-			background-color: $main_background_color;
-			min-height: 80px;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			.nav__logo {
-				display: flex;
-				justify-content: center;
-				width: 50%;
-				span {
-					font-family: $josefinSans;
-					font-size: 24px;
-					font-weight: 700;
-					line-height: 1.08;
-					letter-spacing: 2.4px;
-					text-transform: uppercase;
-				}
+		.header__scroll {
+			text-align: center;
+			&:hover {
+				cursor: pointer;
 			}
-			.menu {
-				display: flex;
-				width: 50%;
-				justify-content: flex-start;
-				.menu__item {
-					font-family: $aleo;
-					font-size: 14px;
-					font-weight: normal;
-					line-height: 1.86;
-					letter-spacing: normal;
-					text-transform: uppercase;
-					padding-left: 5%;
-				}
+			p {
+				font-family: $josefinSans;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.86;
+				letter-spacing: 2.8px;
+				margin-top: 115px;
 			}
-			
 		}
-		#about {
-			background-image: url('../assets/img/testimonials_bg.png');
-			@include full_background_img;
+	}
+	nav {
+		width: 100%;
+		background-color: $main_background_color;
+		min-height: 80px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.nav__logo {
 			display: flex;
 			justify-content: center;
-			padding-top: 120px;
-			.text {
-				width: 50%;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-end;
-				.text-wrapper {
-					padding-right: 15px;
-					width: 540px;
-					
-					.about__title {
-						font-family: $aleo;
-						font-size: 36px;
-						font-weight: normal;
-						line-height: 0.72;
-						letter-spacing: normal;
-						margin-bottom: 62px;
-						margin-top: 84px;
-					}
-					.about__description {
-						font-family: $josefinSans;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 1.63;
-						letter-spacing: 1.6px;
-						color: #e8e8e8;
-					}
-					.about__cta {
-						width: 225px;
-						height: 60px;
-						background-color: $main_background_color;
-						border: none;
-						font-family: $aleo;
-						font-size: 16px;
-						font-weight: normal;
-						line-height: 1.63;
-						letter-spacing: 1.2px;
-						text-align: center;
-						text-transform: uppercase;
-						margin-top: 48px;
-						margin-bottom: 132px;
-						color: #fff;
-						&:hover {
-							cursor: pointer;
-						}
-					}
-				}
+			width: 50%;
+			span {
+				font-family: $josefinSans;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 1.08;
+				letter-spacing: 2.4px;
+				text-transform: uppercase;
 			}
-			.images {
-				width: 50%;
-				padding-left: 105px;
-				.images__img1 {
-					background-image: url('../assets/img/why_choose_us_2.png');
-					@include full_background_img;
-					width: 350px;
-					height: 220px;
-				}
-				.images__img2 {
-					background-image: url('../assets/img/why_choose_us_1.png');
-					@include full_background_img;
-					width: 350px;
-					height: 220px;
-					margin-left: 125px;
-					margin-top: 5px;
-				}
-			}
-
 		}
-		#actions {
-			background-image: url('../assets/img/book_now_2.png');
-			@include full_background_img;
-			width: 100%;
-			padding: 100px 0 110px;
-			text-align: center;
-			position: relative;
-			.actions__shape {
-				background-image: url('../assets/svg/Shape_wave.svg');
-				@include full_background_img;
-				background-position: right top;
-				height: 60px;
-				width: 775px;
-				position: absolute;
-				top: 45px;
-				left: 50%;
-				transform: translateX(-50%);
+		.menu {
+			display: flex;
+			width: 50%;
+			justify-content: flex-start;
+			.menu__item {
+				font-family: $aleo;
+				font-size: 14px;
+				font-weight: normal;
+				line-height: 1.86;
+				letter-spacing: normal;
+				text-transform: uppercase;
+				padding-left: 5%;
 			}
-			.actions__wrapper {
-				display: flex;
-				z-index: 2;
-				justify-content: center;
-				.actions__item {
-					text-align: center;
-					margin-right: 180px;
-					
-					&:last-child {
-						margin-right: 0;
-					}
-					p {
-					  font-family: $aleo;
-					  font-size: 36px;
-					  font-weight: normal;
-					  line-height: 0.72;
-					  color: #e8e8e8;
-					  margin-top: 25px;
-					}
-				}
-			}	
 		}
-		.booking {
-			.booking__box {
-				width: 540px;
-				background-color: #232323;
-				opacity: 0.9;
-				padding: 50px 30px;
-				.booking__title {
-					font-family: $josefinSans;
-					font-size: 20px;
-					font-weight: 400;
-					font-style: normal;
-					line-height: 1.3;
-					letter-spacing: 1.5px;
-					color: #e8e8e8;
-				}
-				.booking__header {
-					font-family: $josefinSans;
-					font-size: 20px;
-					font-weight: 400;
-					line-height: 1.3;
+		
+	}
+	#about {
+		background-image: url('../assets/img/testimonials_bg.png');
+		@include full_background_img;
+		display: flex;
+		justify-content: center;
+		padding-top: 120px;
+		width: 100%;
+		.text {
+			max-width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			.text-wrapper {
+				padding-right: 15px;
+				
+				.about__title {
+					font-family: $aleo;
+					font-size: 36px;
+					font-weight: normal;
+					line-height: 0.72;
 					letter-spacing: normal;
-					margin: 30px 0;
-					text-transform: uppercase;
+					margin-bottom: 62px;
+					margin-top: 84px;
 				}
-				.booking__text {
+				.about__description {
 					font-family: $josefinSans;
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 1.63;
-					letter-spacing: normal;
+					letter-spacing: 1.6px;
 					color: #e8e8e8;
 				}
-				.booking__cta {
-					border: 0;
+				.about__cta {
 					width: 225px;
 					height: 60px;
-					opacity: 0.9;
 					background-color: $main_background_color;
+					border: none;
 					font-family: $aleo;
 					font-size: 16px;
 					font-weight: normal;
 					line-height: 1.63;
 					letter-spacing: 1.2px;
 					text-align: center;
-					margin-top: 48px;
 					text-transform: uppercase;
+					margin-top: 48px;
+					margin-bottom: 132px;
 					color: #fff;
 					&:hover {
 						cursor: pointer;
@@ -322,119 +210,235 @@ body {
 				}
 			}
 		}
-		#booking--first {
-			background-image: url('../assets/img/book_now_1.png');
-			@include full_background_img;
-			padding: 32% 0 18% 14%;
+		.images {
+			max-width: 50%;
+			.images__img1 {
+				background-image: url('../assets/img/why_choose_us_2.png');
+				@include full_background_img;
+				width: 350px;
+				height: 220px;
+			}
+			.images__img2 {
+				background-image: url('../assets/img/why_choose_us_1.png');
+				@include full_background_img;
+				width: 350px;
+				height: 220px;
+				margin-top: 5px;
+				margin-left: 125px;
+			}
 		}
-		#booking--second {
-			background-image: url('../assets/img/rectangle-4141.png');
+
+	}
+	#actions {
+		background-image: url('../assets/img/book_now_2.png');
+		@include full_background_img;
+		width: 100%;
+		padding: 100px 0 110px;
+		text-align: center;
+		position: relative;
+		.actions__shape {
+			background-image: url('../assets/svg/Shape_wave.svg');
 			@include full_background_img;
-			padding: 32% 0 14% 50%;
+			background-position: right top;
+			height: 60px;
+			width: 775px;
+			position: absolute;
+			top: 45px;
+			left: 50%;
+			transform: translateX(-50%);
 		}
-		#reviews {
+		.actions__wrapper {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-image: url('../assets/img/testimonials_bg.png');
-			@include full_background_img;
-			width: 100%;
-			padding: 120px 0;
-			text-align: center;
-			.reviews__header {
-				font-family: $aleo;
-				font-size: 36px;
-				font-weight: normal;
-				line-height: 0.72;
-				margin-bottom: 94px;
-			}
-			.reviews__wrapper {
-				display: flex;
-				width: 63%;
-				justify-content: center;
-				.reviews__img {
-					background-image: url('../assets/img/testimonials_1.png');
-					@include full_background_img;
-					width: 80%;
-					flex: 1;
+			z-index: 2;
+			justify-content: center;
+			.actions__item {
+				&:hover {
+					cursor: pointer;
 				}
-				.text__wrapper {
-					padding: 50px 60px;
-					text-align: left;
-					background-color: #333333;
-					flex: 1;
-					.userName {
-						font-family: $josefinSans;
-						font-size: 20px;
-						font-weight: 400;
-						line-height: 1.3;
-						color: #fefefe;
-						text-transform: uppercase;
-						margin-bottom: 23px;
-					}
-					.text {
-						font-family: $josefinSans;
-						font-size: 16px;
-						font-weight: 400;
-						line-height: 1.63;
-						color: #e8e8e8;
-
-					}
+				text-align: center;
+				margin-right: 180px;
+				&:last-child {
+					margin-right: 0;
 				}
-
-			}
-			.slider__wrapper {
-				width: 63%;
-				display: flex;
-				justify-content: flex-end;
-				margin-top: 30px;
-				.slider {
-					width: 80px;
-					height: 50px;
-					border: solid 1px #ffffff;
-					position: relative;
-					margin-left: 15px;
-					&:hover {
-						cursor: pointer;
-					}
-					.slider__img {
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-					}
+				p {
+				  font-family: $aleo;
+				  font-size: 36px;
+				  font-weight: normal;
+				  line-height: 0.72;
+				  color: #e8e8e8;
+				  margin-top: 25px;
 				}
 			}
-		}
-		footer {
-			text-align: center;
+		}	
+	}
+	.booking {
+		.booking__box {
+			max-width: 540px;
 			background-color: #232323;
-			padding: 120px 0 53px;
-			.footer__title {
+			opacity: 0.9;
+			padding: 50px 30px;
+			.booking__title {
 				font-family: $josefinSans;
-				font-size: 24px;
-				font-weight: 700;
-				line-height: 1.08;
-				letter-spacing: 5px;
-				text-transform: uppercase;
-				margin-bottom: 10px;
+				font-size: 20px;
+				font-weight: 400;
+				font-style: normal;
+				line-height: 1.3;
+				letter-spacing: 1.5px;
+				color: #e8e8e8;
 			}
-			.footer_description {
+			.booking__header {
+				font-family: $josefinSans;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 1.3;
+				letter-spacing: normal;
+				margin: 30px 0;
+				text-transform: uppercase;
+			}
+			.booking__text {
 				font-family: $josefinSans;
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 1.63;
-				letter-spacing: 1.6px;
-				margin-bottom: 33px;
+				letter-spacing: normal;
+				color: #e8e8e8;
 			}
-			.footer__icons {
-				.icons__item {
-					margin-left: 23px;
-					display: inline-block;
-					&:first-child {
-						margin-left: 0;
-					}
+			.booking__cta {
+				border: 0;
+				width: 225px;
+				height: 60px;
+				opacity: 0.9;
+				background-color: $main_background_color;
+				font-family: $aleo;
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 1.63;
+				letter-spacing: 1.2px;
+				text-align: center;
+				margin-top: 48px;
+				text-transform: uppercase;
+				color: #fff;
+				&:hover {
+					cursor: pointer;
 				}
 			}
 		}
+	}
+	#booking--first {
+		background-image: url('../assets/img/book_now_1.png');
+		@include full_background_img;
+		padding: 32% 0 18% 14%;
+	}
+	#booking--second {
+		background-image: url('../assets/img/rectangle-4141.png');
+		@include full_background_img;
+		padding: 32% 0 14% 50%;
+	}
+	#reviews {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url('../assets/img/testimonials_bg.png');
+		@include full_background_img;
+		width: 100%;
+		padding: 120px 0;
+		text-align: center;
+		.reviews__header {
+			font-family: $aleo;
+			font-size: 36px;
+			font-weight: normal;
+			line-height: 0.72;
+			margin-bottom: 94px;
+		}
+		.reviews__wrapper {
+			display: flex;
+			width: 63%;
+			justify-content: center;
+			.reviews__img {
+				background-image: url('../assets/img/testimonials_1.png');
+				@include full_background_img;
+				width: 80%;
+				flex: 1;
+			}
+			.text__wrapper {
+				padding: 50px 60px;
+				text-align: left;
+				background-color: #333333;
+				flex: 1;
+				.userName {
+					font-family: $josefinSans;
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 1.3;
+					color: #fefefe;
+					text-transform: uppercase;
+					margin-bottom: 23px;
+				}
+				.text {
+					font-family: $josefinSans;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.63;
+					color: #e8e8e8;
+				}
+			}
+
+		}
+		.slider__wrapper {
+			width: 63%;
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 30px;
+			.slider {
+				width: 80px;
+				height: 50px;
+				border: solid 1px #ffffff;
+				position: relative;
+				margin-left: 15px;
+				&:hover {
+					cursor: pointer;
+				}
+				.slider__img {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+	footer {
+		text-align: center;
+		background-color: #232323;
+		padding: 120px 0 53px;
+		.footer__title {
+			font-family: $josefinSans;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 1.08;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		.footer_description {
+			font-family: $josefinSans;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.63;
+			letter-spacing: 1.6px;
+			margin-bottom: 33px;
+		}
+		.footer__icons {
+			.icons__item {
+				margin-left: 23px;
+				display: inline-block;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }
