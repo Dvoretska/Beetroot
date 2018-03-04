@@ -60,8 +60,10 @@ header {
     background-position: top right;
     padding-top: 285px;
 }
+.header-container {
+	max-width: 595px;
+}
 .header-title {
-	width: 591px;
 	font-size: 54px;
 	font-weight: bold;
 	letter-spacing: 8.6px;
@@ -70,7 +72,6 @@ header {
 	margin: 76px 0 35px;
 }
 .header-description {
-	width: 579px;
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 1.93;
@@ -87,10 +88,9 @@ header {
 /*ABOUT*/
 #about {
 	padding: 160px 0 153px;
-
 }
 #about .text {
-	width: 553px;
+	max-width: 553px;
 	line-height: 1.5;
 	margin: 67px 0 29px;
 }

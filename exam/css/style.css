@@ -1,0 +1,494 @@
+@font-face {
+  font-family: "Aleo";
+  src: url("../assets/fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.eot") format("eot"), url("../assets/fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.woff") format("woff"), url("../assets/fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.ttf") format("truetype"), url("../assets/fonts/Aleo-Font/Webfont Kit/Regular/aleo-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 5px;
+  color: #fff;
+}
+
+body header {
+  background-image: url("../assets/img/Header_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 265px 0 134px;
+}
+
+body header .header__title {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 0.54;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+body header .header__description {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 6.8px;
+  margin-bottom: 45px;
+}
+
+body header .header__search {
+  position: relative;
+}
+
+body header .header__search input {
+  width: 650px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  padding: 0 150px 0 126px;
+}
+
+body header .header__search input::placeholder {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+
+body header .header__search button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #7F00FF;
+  border: solid 2px #ffffff;
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+  letter-spacing: 1.4px;
+  padding-right: 20px;
+  color: #fff;
+}
+
+body header .header__search img {
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+}
+
+body header .header__scroll {
+  text-align: center;
+}
+
+body header .header__scroll:hover {
+  cursor: pointer;
+}
+
+body header .header__scroll p {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.86;
+  letter-spacing: 2.8px;
+  margin-top: 115px;
+}
+
+body nav {
+  width: 100%;
+  background-color: #7F00FF;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body nav .nav__logo {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+body nav .nav__logo span {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+body nav .menu {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+body nav .menu .menu__item {
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+body #about {
+  background-image: url("../assets/img/testimonials_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+body #about .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+body #about .text .text-wrapper {
+  padding-right: 15px;
+  width: 540px;
+}
+
+body #about .text .text-wrapper .about__title {
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  margin-bottom: 62px;
+  margin-top: 84px;
+}
+
+body #about .text .text-wrapper .about__description {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  letter-spacing: 1.6px;
+  color: #e8e8e8;
+}
+
+body #about .text .text-wrapper .about__cta {
+  width: 225px;
+  height: 60px;
+  background-color: #7F00FF;
+  border: none;
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 48px;
+  margin-bottom: 132px;
+  color: #fff;
+}
+
+body #about .text .text-wrapper .about__cta:hover {
+  cursor: pointer;
+}
+
+body #about .images {
+  width: 50%;
+  padding-left: 105px;
+}
+
+body #about .images .images__img1 {
+  background-image: url("../assets/img/why_choose_us_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 220px;
+}
+
+body #about .images .images__img2 {
+  background-image: url("../assets/img/why_choose_us_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 220px;
+  margin-left: 125px;
+  margin-top: 5px;
+}
+
+body #actions {
+  background-image: url("../assets/img/book_now_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 100px 0 110px;
+  text-align: center;
+  position: relative;
+}
+
+body #actions .actions__shape {
+  background-image: url("../assets/svg/Shape_wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: right top;
+  height: 60px;
+  width: 775px;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body #actions .actions__wrapper {
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+}
+
+body #actions .actions__wrapper .actions__item {
+  text-align: center;
+  margin-right: 180px;
+}
+
+body #actions .actions__wrapper .actions__item:last-child {
+  margin-right: 0;
+}
+
+body #actions .actions__wrapper .actions__item p {
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 0.72;
+  color: #e8e8e8;
+  margin-top: 25px;
+}
+
+body .booking .booking__box {
+  width: 540px;
+  background-color: #232323;
+  opacity: 0.9;
+  padding: 50px 30px;
+}
+
+body .booking .booking__box .booking__title {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+  color: #e8e8e8;
+}
+
+body .booking .booking__box .booking__header {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+body .booking .booking__box .booking__text {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #e8e8e8;
+}
+
+body .booking .booking__box .booking__cta {
+  border: 0;
+  width: 225px;
+  height: 60px;
+  opacity: 0.9;
+  background-color: #7F00FF;
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+body .booking .booking__box .booking__cta:hover {
+  cursor: pointer;
+}
+
+body #booking--first {
+  background-image: url("../assets/img/book_now_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32% 0 18% 14%;
+}
+
+body #booking--second {
+  background-image: url("../assets/img/rectangle-4141.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32% 0 14% 50%;
+}
+
+body #reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/img/testimonials_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 120px 0;
+  text-align: center;
+}
+
+body #reviews .reviews__header {
+  font-family: "Aleo", Times New Roman, serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 0.72;
+  margin-bottom: 94px;
+}
+
+body #reviews .reviews__wrapper {
+  display: flex;
+  width: 63%;
+  justify-content: center;
+}
+
+body #reviews .reviews__wrapper .reviews__img {
+  background-image: url("../assets/img/testimonials_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  flex: 1;
+}
+
+body #reviews .reviews__wrapper .text__wrapper {
+  padding: 50px 60px;
+  text-align: left;
+  background-color: #333333;
+  flex: 1;
+}
+
+body #reviews .reviews__wrapper .text__wrapper .userName {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #fefefe;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+body #reviews .reviews__wrapper .text__wrapper .text {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  color: #e8e8e8;
+}
+
+body #reviews .slider__wrapper {
+  width: 63%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+body #reviews .slider__wrapper .slider {
+  width: 80px;
+  height: 50px;
+  border: solid 1px #ffffff;
+  position: relative;
+  margin-left: 15px;
+}
+
+body #reviews .slider__wrapper .slider:hover {
+  cursor: pointer;
+}
+
+body #reviews .slider__wrapper .slider .slider__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body footer {
+  text-align: center;
+  background-color: #232323;
+  padding: 120px 0 53px;
+}
+
+body footer .footer__title {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+body footer .footer_description {
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  letter-spacing: 1.6px;
+  margin-bottom: 33px;
+}
+
+body footer .footer__icons .icons__item {
+  margin-left: 23px;
+  display: inline-block;
+}
+
+body footer .footer__icons .icons__item:first-child {
+  margin-left: 0;
+}
