@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="script.js" async></script>
+</head>
+<body>
+<nav class="nav-bar">
+
+    <div class="nav-logo-container">
+      <a href="#" class="nav-logo-wrapper">
+        <img src="assets/img/shopping-store.svg" class="nav-logo-img">
+        <span class="nav-logo-title">SHOP NOW</span>
+      </a>
+    </div>
+
+    <div class="nav-search">
+			<input placeholder="Search..." class="nav-search-input"></input>
+			<button>
+				<img src="./assets/img/search.svg">
+			</button>	
+	</div>
+
+    <div class="nav-user-info">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="user-icon">
+          <path fill="#000000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+        </svg>
+      <a href="#">
+        <span class="username">Username</span>
+        <i class="material-icons">&#xE5C5;</i>
+      </a>
+      <ul class="submenu">
+        <li>
+          <a href="#">My orders</a>
+        </li>
+        <li>
+          <a href="#">My reviews</a>
+        </li>
+        <li>
+          <a href="#">My settings</a>
+        </li>
+        <li class="logout-wrapper">
+          <a href="#">
+            <i class="material-icons">&#xE8AC;</i>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+    	<i class="material-icons">&#xE8CC;</i>
+    </div>
+
+  	<div class="button-auth">
+    	<a href="#">Login</a>
+  	</div>
+
+ 	 <div class="button-auth">
+    	<a href="#">Sign up</a>
+  	</div>
+
+  </nav>
+  <div class="product-container">
+		<aside class="filters-box">
+			<button class="accordion" data-name="candy">Candies</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<button class="accordion" data-name="chocolate">Chocolates</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<button class="accordion" data-name="sugar-sweets">Sugar sweets</button>
+			<div class="panel">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</aside>
+		<div id="cards">
+			
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer-icons">
+			<img src="assets/img/facebook.svg" alt="" class="icons-item">
+			<img src="assets/img/twitter.svg" alt="" class="icons-item">
+			<img src="assets/img/youtube.svg" alt="" class="icons-item">
+
+		</div>
+		<span>© 2018. All Rights Reserved Dvoretskaya Daria</span>
+	</footer>
+
+<body>
+</html>

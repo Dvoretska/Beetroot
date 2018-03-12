@@ -1,0 +1,338 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+body{
+	min-height:100vh;
+	font-family: 'Lato', Arial, sans-serif;
+	width: calc(100vw - (100vw - 100%));
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  }
+  .nav-logo-container {
+    margin-left: 15px;
+
+  }
+  .nav-logo-wrapper {
+  	display: flex;
+    align-items: center;
+  }
+  .nav-logo-img {
+    height: 50px;
+  }
+  .nav-logo-title {
+	margin-left: 20px;
+	font-weight: 700;
+	color: #404040;
+  }
+  .nav-search {
+	  position: relative;
+	  margin-right: auto;
+	  margin-left: 20px;
+	  width: 30%;
+	}
+
+	.nav-search input {
+		width: 100%;
+	  height: 30px;
+	  background-color: #fff;
+	  border: none;
+	  padding: 0 40px 0 10px;
+	  border-radius: 5px;
+	}
+
+	.nav-search input::placeholder {
+	  font-family: "Josefin Sans", Arial, sans-serif;
+	  font-size: 14px;
+	  font-weight: 400;
+	  color: #999999;
+	}
+
+	.nav-search button {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  width: 40px;
+	  height: 30px;
+	  cursor: pointer;
+	  background-color: #C2C2CB;
+	  border: none;
+	  font-size: 12px;
+	  border-top-right-radius: 5px;
+	  border-bottom-right-radius: 5px;
+	  padding-right: 25px;
+	  color: #fff;
+	}
+	.nav-search img {
+	  width: 20px;
+	  height: 22px;
+	  position: absolute;
+	  top: 50%;
+	  right: 50%;
+	  transform: translate(50%, -50%);
+	}
+  .button-auth {
+  	width: 70px;
+    margin-right: 10px;
+    background-color: #E8E8E8;
+    border-radius: 12px;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font: 700 12px Futura, "Trebuchet MS", Arial, sans-serif;
+  }
+  .button-auth a {
+  	text-decoration: none;
+  	color: #006DF0;
+  }
+  .button-auth a:hover, .username:hover {
+    color: #8c40b8;
+    cursor: pointer;
+  }
+  .nav-user-info {
+    position: relative;
+  }
+  .nav-user-info .material-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .username {
+    display: inline-block;
+    height: 55px;
+    color: #006DF0;
+    font: 700 17px Futura, "Trebuchet MS", Arial, sans-serif;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 19px 15px 0 0;
+  }
+  .user-icon {
+    vertical-align: middle;
+  }
+  .logout-wrapper {
+    position: relative;
+  }
+  .logout-wrapper .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+  }
+  .logout-wrapper span {
+    padding-left: 23px;
+    display: inline-block;
+  }
+  .submenu {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 150px;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    list-style: none;
+  }
+  .submenu a {
+  	color: #8c40b8;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    padding: 7px 15px;
+    width: 100%;
+  }
+  .nav-user-info:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .submenu a:hover {
+    background-color: #f4f4f4;
+  }
+  .submenu a:first-child:hover {
+    border-top: 1px solid #ccc;
+    margin-top: -1px;
+  }
+
+  .product-container {
+		display: flex;
+		max-width: 100vw;
+	}
+	#cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: baseline;
+	}
+	.product-card:hover {
+		cursor: pointer;
+	}
+	.product-card {
+	    margin:10px 5px 0 5px;
+		height: 420px;
+		font: 500 16px 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
+        border: 1px solid #D7D7D7;
+	}
+	.filters-box {
+		width: 280px;
+		padding: 10px 0 10px 10px;
+	}
+	.accordion {
+	    background-color: #eee;
+	    color: #444;
+	    cursor: pointer;
+	    padding: 18px;
+	    width: 100%;
+	    border: none;
+	    text-align: left;
+	    outline: none;
+	    font-size: 15px;
+	    transition: 0.4s;
+	}
+
+	.active, .accordion:hover {
+	    background-color: #ccc;
+	}
+
+	.panel {
+	    padding: 0 18px;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.2s ease-out;
+	}
+	.product-card:hover {
+		border: solid 1px #CCC;
+	    -moz-box-shadow: 1px 1px 3px #999;
+	    -webkit-box-shadow: 1px 1px 3px #999;
+        box-shadow: 1px 1px 3px #999;
+	}
+	.image-block {
+		margin: 15px;
+		height: 200px;
+		position: relative;
+	}
+	.product-price {
+		padding-bottom: 15px;
+		font-size: 21px;
+		font-weight: 600;
+		line-height: 16px;
+	}
+	div.product-image {
+	    height: 100%;
+	    width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    display: flex;
+	    justify-content: center;
+    }
+    div.product-image img {
+    	max-width: 100%;
+    	max-height: 100%;
+    	object-fit: contain;
+    }
+    .product-description {
+		margin: 15px;
+    }
+    .stars-outer {
+	  	position: relative;
+	  	font-family: FontAwesome;
+	} 
+	.stars-outer::before {
+	  	content: "\f006 \f006 \f006 \f006 \f006";
+	} 
+	.stars-inner {
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	white-space: nowrap;
+	  	overflow: hidden;
+	  	width: 0;
+	}
+	.stars-inner::before {
+	  	content: "\f005 \f005 \f005 \f005 \f005";
+	  	color: #7957d5;
+	}
+	.product-details {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.product-rating {
+		margin-top: 5px;
+		max-height: 20px;
+		width: 91px;
+	}
+	.product-name {
+		height: 70px;
+		font-size: 13px;
+		overflow: hidden;
+	}
+	@media (max-width: 1499px) {
+		.product-card {
+			width: calc(25% - 10px - 2px);
+		}
+	}
+	@media (min-width: 993px) and (max-width: 1199px) {
+		.product-card {
+			width: calc(33% - 10px - 1px);
+		}
+	}
+	@media (max-width: 992px) {
+		.product-card {
+			width: calc(50% - 10px - 1px);
+		}
+	}
+	@media (max-width: 650px) {
+		.product-card {
+			width: calc(100% - 10px - 1px);
+			min-width: 250px;
+		}
+		.product-container {
+			overflow-y: scroll;
+		}
+	}
+  footer {
+	text-align: center;
+	background-color: #C2C2CB;
+	width:100%;
+	padding: 15px 0;
+  }
+  footer .icons-item {
+  	height: 25px;
+  	width: 25px;
+  	margin-left: 2.5px;
+  	margin-right: 2.5px;
+  }
+  footer .icons-item:hover {
+  	cursor: pointer;
+  }
+  footer span {
+  	margin-top: 10px;
+  	display: inline-block;
+  	font-size: 12px;
+  }
