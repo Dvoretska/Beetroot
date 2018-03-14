@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <script src="script.js" async></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">  
+
 </head>
 <body>
 <nav class="nav-bar">
@@ -20,8 +25,8 @@
 
     <div class="nav-search">
 			<input placeholder="Search..." class="nav-search-input"></input>
-			<button>
-				<img src="./assets/img/search.svg">
+			<button class="nav-search-button">
+				<img src="./assets/img/search.svg" class="nav-search-icon">
 			</button>	
 	</div>
 
@@ -51,38 +56,39 @@
         </li>
       </ul>
     </div>
-    <div>
-    	<i class="material-icons">&#xE8CC;</i>
-    </div>
+    
+   	<img src="assets/img/shopping-cart.svg" alt="" class="cart-icon">
+  
 
-  	<div class="button-auth">
+  	<div class="auth-button">
     	<a href="#">Login</a>
   	</div>
 
- 	 <div class="button-auth">
+ 	 <div class="auth-button">
     	<a href="#">Sign up</a>
   	</div>
 
   </nav>
-  <div class="product-container">
+  <div class="main-container">
 		<aside class="filters-box">
-			<button class="accordion" data-name="candy">Candies</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
+      <div class="filters">
+  			<button class="category" data-name="candy">Candies</button>
+  			<div class="panel">
+  			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  			</div>
 
-			<button class="accordion" data-name="chocolate">Chocolates</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
+  			<button class="category" data-name="chocolate">Chocolates</button>
+  			<div class="panel">
+  			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  			</div>
 
-			<button class="accordion" data-name="sugar-sweets">Sugar sweets</button>
-			<div class="panel">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
+  			<button class="category" data-name="sugar-sweets">Sugar sweets</button>
+  			<div class="panel">
+  			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  			</div>
+      </div>
 		</aside>
-		<div id="cards">
-			
+		<div id="product-cards-container">	
 		</div>
 	</div>
 

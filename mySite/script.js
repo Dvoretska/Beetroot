@@ -1,18 +1,4 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
 var data = null;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight){
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     } 
-//   });
-// }
 
  function loadJSON(callback) {   
 
@@ -29,14 +15,12 @@ var data = null;
  }
 
 function loadProducts(category) {
-	var cards = document.getElementById('cards');
+	var cards = document.getElementById('product-cards-container');
 	var result = '';
 	for(var i = 0; i < data[category].length; i++) {
 		var productCard = `<div class="product-card">
-			    <div class="image-block">
-					<div class="product-image">
-						<img src="` + data[category][i][1] + `" alt="">
-					</div>	
+			    <div class="product-img-wrapper">
+						<img src="` + data[category][i][1] + `" alt="" class="product-img">
 				</div>
 				<div class="product-description">
 					<div class="product-price">` + data[category][i][2] + ` грн. </div>
@@ -46,8 +30,10 @@ function loadProducts(category) {
           					<div class="stars-inner" v-bind:style="stars"></div>
         				</div>
         			</div>
-        			<div class="product-details">
-						<button-bar :label="'More options'"></button-bar>
+        			<div class="button-cta-wrapper">
+	        			<div class="button-cta">
+							<a href="#">Buy</a>
+						</div>
 					</div>
 				</div>
 			</div>`;
@@ -62,7 +48,7 @@ function init() {
   // Parse JSON string into object
      data =  JSON.parse(response);
      loadProducts('candy');
-     var categories = document.getElementsByClassName('accordion');
+     var categories = document.getElementsByClassName('category');
      [...categories].forEach(function(item, i) {
      	item.onclick = function () {
      		var categoryName = this.dataset.name;
@@ -74,4 +60,5 @@ function init() {
 }
 
 init();
+
 
