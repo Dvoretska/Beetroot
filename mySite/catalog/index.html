@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <script src="script.js" async></script>
+    <script src="../script.js" async></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">  
 
 </head>
@@ -18,7 +16,7 @@
 
     <div class="nav-logo-container">
       <a href="#" class="nav-logo-wrapper">
-        <img src="assets/img/shopping-store.svg" class="nav-logo-img">
+        <img src="../assets/img/shopping-store.svg" class="nav-logo-img">
         <span class="nav-logo-title">SHOP NOW</span>
       </a>
     </div>
@@ -26,7 +24,7 @@
     <div class="nav-search">
 			<input placeholder="Search..." class="nav-search-input"></input>
 			<button class="nav-search-button">
-				<img src="./assets/img/search.svg" class="nav-search-icon">
+				<img src="../assets/img/search.svg" class="nav-search-icon">
 			</button>	
 	</div>
 
@@ -57,35 +55,42 @@
       </ul>
     </div>
     
-   	<img src="assets/img/shopping-cart.svg" alt="" class="cart-icon">
+   	<img src="../assets/img/shopping-cart.svg" alt="" class="cart-icon">
   
-
   	<div class="auth-button">
-    	<a href="#">Login</a>
+    	<a href="../auth/login.html">Login</a>
   	</div>
 
  	 <div class="auth-button">
-    	<a href="#">Sign up</a>
+    	<a href="../auth/register.html">Sign up</a>
   	</div>
 
   </nav>
   <div class="main-container">
 		<aside class="filters-box">
       <div class="filters">
-  			<button class="category" data-name="candy">Candies</button>
-  			<div class="panel">
-  			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  			</div>
+        <div class="category-wrapper">
+    			<button class="category" data-name="candy">Candies</button>
+    			<div class="panel">
+    			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    			</div>
+          <span class="hover-effect"></span>
+        </div>
+        <div class="category-wrapper">
+    			<button class="category" data-name="chocolate">Chocolates</button>
+    			<div class="panel">
+    			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    			</div>
+          <span class="hover-effect"></span>
+        </div>
 
-  			<button class="category" data-name="chocolate">Chocolates</button>
-  			<div class="panel">
-  			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  			</div>
-
-  			<button class="category" data-name="sugar-sweets">Sugar sweets</button>
-  			<div class="panel">
-  			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  			</div>
+        <div class="category-wrapper">
+    			<button class="category" data-name="sugar-sweets">Sugar sweets</button>
+    			<div class="panel">
+    			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    			</div>
+          <span class="hover-effect"></span>
+        </div>
       </div>
 		</aside>
 		<div id="product-cards-container">	
@@ -94,9 +99,9 @@
 
 	<footer>
 		<div class="footer-icons">
-			<img src="assets/img/facebook.svg" alt="" class="icons-item">
-			<img src="assets/img/twitter.svg" alt="" class="icons-item">
-			<img src="assets/img/youtube.svg" alt="" class="icons-item">
+			<img src="../assets/img/facebook.svg" alt="" class="icons-item">
+			<img src="../assets/img/twitter.svg" alt="" class="icons-item">
+			<img src="../assets/img/youtube.svg" alt="" class="icons-item">
 
 		</div>
 		<span>© 2018. All Rights Reserved Dvoretskaya Daria</span>
