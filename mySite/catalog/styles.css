@@ -59,6 +59,7 @@ body{
 }
 .nav-logo-title {
 	margin-left: 20px;
+	font-size: 18px;
 	font-weight: 700;
 	color: #404040;
 }
@@ -150,7 +151,9 @@ body{
 .logout-wrapper {
 	position: relative;
 }
-.logout-wrapper .material-icons {
+.logout-wrapper .logout-icon {
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	top: 50%;
 	left: 13px;
@@ -216,6 +219,7 @@ body{
 }
 .active, .category:hover {
 	background-color: #ccc;
+	color: #8c40b8;
 }
 .panel {
 	padding: 0 18px;
@@ -317,26 +321,48 @@ body{
 }
 @media (max-width: 1499px) {
 	.product-card {
-	width: calc(25% - 10px - 1px);
+		width: calc(25% - 10px - 1px);
 	}
 }
-@media (min-width: 993px) and (max-width: 1199px) {
+@media (min-width: 900px) and (max-width: 1199px) {
 	.product-card {
-	width: calc(33% - 10px - 1px);
+		width: calc(33% - 10px - 1px);
 	}
 }
-@media (max-width: 992px) {
+@media (max-width: 900px) {
 	.product-card {
-	width: calc(50% - 10px - 1px);
+		width: calc(50% - 10px - 1px);
+	}
+	.nav-user-info .username {
+		display: none;
+	}
+	.user-icon {
+		margin-left: 15px;
+	}
+	.user-icon:hover {
+		cursor: pointer;
+	}
+	.nav-user-info .material-icons {
+		display: none;
+	}
+	.submenu {
+		top: 40px;
 	}
 }
 @media (max-width: 650px) {
+	.nav-bar {
+		justify-content: space-between;
+	}
 	.product-card {
-	width: calc(100% - 10px - 1px);
-	min-width: 250px;
+		width: calc(100% - 10px - 1px);
+		min-width: 150px;
 	}
 	.product-container {
-	overflow-y: scroll;
+		overflow-y: scroll;
+	}
+	.nav-logo-title {
+		font-size: 14px;
+		white-space: nowrap;
 	}
 }
 footer {
