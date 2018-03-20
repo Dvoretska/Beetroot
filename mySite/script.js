@@ -38,7 +38,6 @@ function loadProducts(category) {
 				</div>
 			</div>`;
 			result += productCard;
-     	// console.log(data['candy'][i][0], data['candy'][1], data['candy'][2])
      }
      cards.innerHTML = result;
 }

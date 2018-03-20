@@ -47,15 +47,14 @@ body{
     background-color: #f4f4f4;
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
   }
-.nav-logo-container {
-	margin-left: 15px;
-}
 .nav-logo-wrapper {
 	display: flex;
 	align-items: center;
+	margin-left: 15px;
 }
 .nav-logo-img {
 	height: 50px;
+	vertical-align: middle;
 }
 .nav-logo-title {
 	margin-left: 20px;
@@ -348,6 +347,10 @@ body{
 	.submenu {
 		top: 40px;
 	}
+	.nav-logo-title {
+		font-size: 14px;
+		white-space: nowrap;
+	}
 }
 @media (max-width: 650px) {
 	.nav-bar {
@@ -360,10 +363,7 @@ body{
 	.product-container {
 		overflow-y: scroll;
 	}
-	.nav-logo-title {
-		font-size: 14px;
-		white-space: nowrap;
-	}
+
 }
 footer {
 	text-align: center;
