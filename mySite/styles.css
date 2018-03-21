@@ -223,6 +223,10 @@ body{
 }
 
 #section-reviews {
+	background-image: url('assets/img/199543-OYHBTB-510.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -234,22 +238,37 @@ body{
 	color: #6b3e26;
 	text-transform: uppercase;
 	font-size: 30px;
+	text-shadow: 1px 1px 1px silver,
+       -1px 1px 1px silver;
+    margin-bottom: 75px;
 }
 .reviews-wrapper {
 	width: 70%;
-	height: 300px;
+	height: 370px;
 	display: flex;
-	align-items: center;
+	border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 auto;
 }
 .reviews-img {
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
 	width: 50%;
 }
 .reviews-text {
+	max-height: 310px;
+	overflow: hidden;
 	width: 50%;
+	font-size: 22px;
+	padding-left: 30px;
+	padding-top: 10px;
+	text-indent: 20px;
 }
 .reviews-img1 {
 	background-image: url('assets/img/37071446-cute-girls-pics.jpg');
@@ -260,7 +279,6 @@ body{
 .reviews-img3 {
 	background-image: url('assets/img/sweet.jpeg');
 }
-
 
 #section-gallery {
 	width: 100%;
