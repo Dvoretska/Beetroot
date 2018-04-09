@@ -40,8 +40,6 @@ $(document).ready(function(){
 			scrollTo(document.documentElement, futurePosition('contact'), 1450);
 		});	
 	}
-	
-
 
 	function futurePosition(elId) {
 		var el = document.getElementById(elId);
@@ -52,21 +50,22 @@ $(document).ready(function(){
 		var elY = getCoords(el).top;
 		return elY;
 	}
+
 	function scrollTo(element, to, duration) {
-    var start = element.scrollTop,
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
-        
-    var animateScroll = function(){        
-        currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        element.scrollTop = val;
-        if(currentTime < duration) {
-            setTimeout(animateScroll, increment);
-        }
-    };
-    animateScroll();
+	    var start = element.scrollTop,
+	        change = to - start,
+	        currentTime = 0,
+	        increment = 20;
+	        
+	    var animateScroll = function(){        
+	        currentTime += increment;
+	        var val = Math.easeInOutQuad(currentTime, start, change, duration);
+	        element.scrollTop = val;
+	        if(currentTime < duration) {
+	            setTimeout(animateScroll, increment);
+	        }
+	    };
+	    animateScroll();
 	}
 
 	Math.easeInOutQuad = function (time, startVal, change, duration) {
@@ -86,21 +85,17 @@ $(document).ready(function(){
 			}
 			this.classList.add('active');
 			filterImages(this.innerHTML);
-
-			
-
 		})
 	}
 
-	function filterImages(filterItem='All images') {
+	function filterImages(filterItem='All works') {
 		var galleryContainer = document.getElementsByClassName('gallery__container')[0];
 		galleryContainer.innerHTML = '';
-		console.log(dataImages);
 		for(let filter of dataImages) {
 			var div = document.createElement('div');
 			div.classList.add('my_column');
 			for(var i = 0; i < filter.length; i++) {
-				if(filterItem == 'All images' || filterItem == filter[i].type) {
+				if(filterItem == 'All works' || filterItem == filter[i].type) {
 					var innerDiv = document.createElement('div');
 					innerDiv.classList.add('gallery__img');
 					innerDiv.classList.add(filter[i].class);
@@ -111,10 +106,10 @@ $(document).ready(function(){
 		}
 	}
 
-	const dataImages = [[{class: 'gallery__img1', type: 'HTML'}, {class: 'gallery__img2', type: 'CSS'}, {class: 'gallery__img3', type: 'JS'}],
-						[{class: 'gallery__img4', type: 'HTML'}, {class: 'gallery__img5', type: 'JS'}, {class: 'gallery__img6', type: 'CSS'}],
-						[{class: 'gallery__img7', type: 'JS'}, {class: 'gallery__img8', type: 'HTML'}, {class: 'gallery__img9', type: 'CSS'}],
-						[{class: 'gallery__img10', type: 'HTML'}, {class: 'gallery__img11', type: 'JS'}, {class: 'gallery__img12', type: 'CSS'}]]
+	const dataImages = [[{class: 'gallery__img1', type: 'Print'}, {class: 'gallery__img2', type: 'Print'}, {class: 'gallery__img3', type: 'Print'}],
+						[{class: 'gallery__img4', type: 'Branding'}, {class: 'gallery__img5', type: 'Branding'}, {class: 'gallery__img6', type: 'Branding'}],
+						[{class: 'gallery__img7', type: 'Web'}, {class: 'gallery__img8', type: 'Web'}, {class: 'gallery__img9', type: 'Web'}],
+						[{class: 'gallery__img10', type: 'HTML'}, {class: 'gallery__img11', type: 'HTML'}, {class: 'gallery__img12', type: 'HTML'}]]
 
 
 	filterImages();

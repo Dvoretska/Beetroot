@@ -98,11 +98,11 @@ body #about .about__slider .about__img1 {
 }
 
 body #about .about__slider .about__img2 {
-  background-image: url("../assets/img/book_now_1.png");
+  background-image: url("../assets/img/6835.jpg");
 }
 
 body #about .about__slider .about__img3 {
-  background-image: url("../assets/img/Header_bg.png");
+  background-image: url("../assets/img/252043-P43JQA-511.jpg");
 }
 
 body #about .about__text {
@@ -157,7 +157,7 @@ body #portfolio {
   background-position: center;
   background-image: url("../assets/img/background.png");
   width: 100%;
-  padding: 80px 128px 102px;
+  padding: 80px 9% 102px;
 }
 
 body #portfolio .portfolio__description {
@@ -179,6 +179,11 @@ body #portfolio .portfolio__navigation .navigation__item {
   margin-right: 5px;
   margin-left: 5px;
   color: #464646;
+  margin-left: 30px;
+}
+
+body #portfolio .portfolio__navigation .navigation__item:first-child {
+  margin-left: 0;
 }
 
 body #portfolio .portfolio__navigation .active:after {
@@ -277,7 +282,7 @@ body #team {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 75px 169px 100px;
+  padding: 75px 12% 100px;
 }
 
 body #team .team__description {
@@ -289,6 +294,10 @@ body #team .team__slider {
   height: 364px;
   margin: 0 auto;
   text-align: center;
+}
+
+body #team .team__slider .slick-dots {
+  margin-bottom: -50px;
 }
 
 body #team .team__slider .slick-dots li.slick-active button::before {
@@ -363,11 +372,11 @@ body #team .team__slider .slider__item .slider__img1 {
 }
 
 body #team .team__slider .slider__item .slider__img2 {
-  background-image: url("../assets/img/");
+  background-image: url("../assets/img/man1.jpeg");
 }
 
 body #team .team__slider .slider__item .slider__img3 {
-  background-image: url("../assets/img/");
+  background-image: url("../assets/img/man2.jpg");
 }
 
 body #section__cta {
@@ -384,6 +393,7 @@ body #section__cta {
   font-weight: 400;
   letter-spacing: 0.8px;
   padding: 55px 0;
+  margin-top: 70px;
 }
 
 body #section__cta .cta__title {
@@ -404,7 +414,7 @@ body #testimonials {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 75px 98px 100px 98px;
+  padding: 75px 7% 180px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -418,13 +428,15 @@ body #testimonials .testimonials__description {
 body #testimonials .testimonials__slider {
   background-color: #fff;
   width: 100%;
-  height: 316px;
+  min-height: 246px;
   margin: 0 auto;
   text-align: center;
 }
 
 body #testimonials .testimonials__slider .slick-dots {
-  margin-bottom: 60px;
+  height: 80px;
+  margin-bottom: -35px;
+  background-color: #fff;
 }
 
 body #testimonials .testimonials__slider .slick-dots li.slick-active button::before {
@@ -438,24 +450,28 @@ body #testimonials .testimonials__slider .slick-dots li button::before {
 
 body #testimonials .testimonials__slider .testimonials__item {
   display: flex;
-  height: 316px;
+  min-height: 246px;
   width: 100%;
   padding: 55px 110px 60px 96px;
 }
 
-body #testimonials .testimonials__slider .testimonials__item .testimonials__img {
+body #testimonials .testimonials__slider .testimonials__item .img-wrapper {
+  width: 25%;
+}
+
+body #testimonials .testimonials__slider .testimonials__item .img-wrapper .testimonials__img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 130px;
-  width: 150px;
+  width: 130px;
   border-radius: 50%;
 }
 
 body #testimonials .testimonials__slider .testimonials__item .testimonials__text {
   text-align: left;
   height: 100%;
-  margin-left: 69px;
+  margin-left: 50px;
 }
 
 body #testimonials .testimonials__slider .testimonials__item .testimonials__text .text__content {
@@ -488,11 +504,11 @@ body #testimonials .testimonials__slider .testimonials__item .testimonials__img1
 }
 
 body #testimonials .testimonials__slider .testimonials__item .testimonials__img2 {
-  background-image: url("../assets/img/");
+  background-image: url("../assets/img/sweet.jpeg");
 }
 
 body #testimonials .testimonials__slider .testimonials__item .testimonials__img3 {
-  background-image: url("../assets/img/");
+  background-image: url("../assets/img/haley_anderson-1521012039-2382.jpg");
 }
 
 body #contact {

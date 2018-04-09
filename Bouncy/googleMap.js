@@ -1,3 +1,5 @@
+// Configure Google map
+
 function initMap() {
   var uluru = { lat: 50.449189, lng: 30.516672 };
   var map = new google.maps.Map(document.getElementById('map'), {
