@@ -9,7 +9,9 @@ $(document).ready(function(){
   });
   $('.testimonials__slider').slick({
   	arrows: false,
-    dots: true
+    dots: true,
+    autoplay: true,
+  	autoplaySpeed: 4000
   });  
   $('.team__slider').slick({
   	arrows: false,
