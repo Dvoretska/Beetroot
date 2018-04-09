@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	var menuItems = document.getElementsByClassName('menu__item');
+	for(var i = 0; i < menuItems.length; i++) {
+		menuItems[i].addEventListener('click', function() {
+			for(var j = 0; j < menuItems.length; j++) {
+				menuItems[j].classList.remove('selected');
+			}
+			this.classList.add('selected');
+		})
+	}
+
   // Configure sliders
 
   $('.about__slider').slick({

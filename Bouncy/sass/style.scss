@@ -64,13 +64,14 @@ body {
 				font-family: $openSans;
 				font-size: 16px;
 				font-weight: 400;
-				margin-left: 40px;
 				cursor: pointer;
-				&:first-child {
-					border: 1px solid white;
-					border-radius: 17px;
-					padding: 7px 24px;
-				}
+				border: 1px solid transparent;
+				padding: 7px 20px;
+				margin-left: 10px;
+			}
+			.selected {
+				border: 1px solid white;
+				border-radius: 17px;
 			}
 		}	
 	}
