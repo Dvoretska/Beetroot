@@ -31,10 +31,9 @@ a:hover, a:visited {
 
 body {
   min-height: 100vh;
+  max-width: 1800px;
   width: 100%;
-  border: 5px solid #fff;
   color: #fff;
-  overflow-x: hidden;
 }
 
 body header {
@@ -184,16 +183,8 @@ body #about {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
-  padding-top: 120px;
+  padding: 120px 50px 50px;
   width: 100%;
-}
-
-body #about .text {
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 body #about .text .text-wrapper {
@@ -206,8 +197,6 @@ body #about .text .text-wrapper .about__title {
   font-weight: normal;
   line-height: 0.72;
   letter-spacing: normal;
-  margin-bottom: 62px;
-  margin-top: 84px;
 }
 
 body #about .text .text-wrapper .about__description {
@@ -240,15 +229,12 @@ body #about .text .text-wrapper .about__cta:hover {
   cursor: pointer;
 }
 
-body #about .images {
-  max-width: 50%;
-}
-
 body #about .images .images__img1 {
   background-image: url("../assets/img/why_choose_us_2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-left: 50px;
   width: 350px;
   height: 220px;
 }

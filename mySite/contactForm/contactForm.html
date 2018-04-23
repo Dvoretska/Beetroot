@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./contactForm.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../catalog/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="catalog.js" async></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">  
+
+</head>
+<body>
+<nav class="nav-bar">
+
+    <div class="nav-logo-wrapper">
+      <a href="../index.html"><img src="../assets/svg/shopping-store.svg" class="nav-logo-img"></a>
+      <a href="#" class="nav-logo-title"><span>SHOP NOW</span></a>
+    </div>
+
+    <div class="nav-search">
+			<input placeholder="Search..." id="nav-search-input"></input>
+			<button id="nav-search-button">
+				<img src="../assets/svg/search.svg" class="nav-search-icon">
+			</button>	
+	  </div>
+
+    <div class="nav-item">
+      <a href="../index.html">Home</a>
+    </div>
+
+    <div class="nav-item last-item"">
+      <a href="catalog.html">Catalog</a>
+    </div>
+
+    <div class="cart-container">
+     	<img src="../assets/svg/shopping-cart.svg" alt="" class="cart-icon">
+      <ul class="cart"><span class="close-cart">x</span></ul>
+    </div>
+  
+  	<div class="auth-button">
+    	<a href="../auth/login.html">Login</a>
+  	</div>
+
+ 	 <div class="auth-button">
+    	<a href="../auth/register.html">Sign up</a>
+  	</div>
+
+  </nav>
+  
+  <section class="contact" id="contact">
+    <div class="contact-container">
+        <form action="#">
+            <h3 class="contact-title">SEND US A MESSAGE</h3>
+            <p class="contact-description">We’d love to hear what you have to say, please use the form below to get in touch!</p>
+            <div class="inputs">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Subject">
+                <textarea name="message" id="" cols="30" rows="1" placeholder="Message"></textarea>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+  </section>
+  <strong>Start: </strong>
+  <select id="start" onchange="calcRoute();">
+   <option value="kiev">Kiev</option>
+  </select>
+  <strong>End: </strong>
+  <select id="end" onchange="calcRoute();">
+   <option value="odessa">Odessa</option>
+   <option value="poltava">Poltava</option>
+  </select>
+  </div>
+  <div id="map"></div>
+    <script>
+    var directionsService;
+    var directionsDisplay;
+    var map;
+      function initMap() {
+        directionsDisplay = new google.maps.DirectionsRenderer();
+        var PoltavaAddress = { lat: 49.568534, lng: 34.585375 };
+        var KievAddress = { lat: 50.449189, lng: 30.516672 };
+        var OdessaAddress = { lat: 46.478298, lng: 30.723602 };
+        var uluru = {lat: -25.363, lng: 131.044};
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: KievAddress
+        });
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png';
+        var addresses = [{
+          position: PoltavaAddress,
+          contentString: "проспект Миру, 36"
+        },
+        {
+          position: KievAddress,
+          contentString: 'вулиця Прорізна, 18/1Г'
+        },
+        {
+          position: OdessaAddress,
+          contentString: 'вулиця Майдан, 5'
+        }];
+        addresses.forEach(function(address) {
+          var marker = new google.maps.Marker({
+            position: address.position,
+            icon: iconBase,
+            map: map
+          });
+          var infowindow = new google.maps.InfoWindow({
+            content: address.contentString
+            });
+          infowindow.open(map, marker);
+          // marker.addListener('click', function() {
+          //   infowindow.open(map, marker);
+          // });
+        });
+        directionsDisplay.setMap(map);
+      }
+      function calcRoute() {
+        var start = document.getElementById('start').value;
+        var end = document.getElementById('end').value;
+        var request = {
+          origin: start,
+          destination: end,
+          travelMode: 'DRIVING'
+        };
+        directionsService = new google.maps.DirectionsService()
+        directionsService.route(request, function(result, status) {
+          if (status == 'OK') {
+            directionsDisplay.setDirections(result);
+          }
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCRgBDAdzAW5Dlv49goCi75YCaFFTwOCE &callback=initMap"
+    async defer></script>
+
+
+	<footer>
+		<div class="footer-icons">
+			<img src="../assets/svg/facebook.svg" alt="" class="icons-item">
+			<img src="../assets/svg/twitter.svg" alt="" class="icons-item">
+			<img src="../assets/svg/youtube.svg" alt="" class="icons-item">
+
+		</div>
+		<span>© 2018. All Rights Reserved Dvoretskaya Daria</span>
+	</footer>
+
+<body>
+</html>

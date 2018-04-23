@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <script src="../script.js" async></script>
+    <script src="script.js" async></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">  
 
 </head>
 <body>
@@ -20,37 +21,27 @@
     </div>
 
     <div class="nav-search">
-			<input placeholder="Search..." class="nav-search-input"></input>
-			<button class="nav-search-button">
+			<input placeholder="Search..." id="nav-search-input"></input>
+			<button id="nav-search-button">
 				<img src="./assets/svg/search.svg" class="nav-search-icon">
 			</button>	
-	</div>
+	  </div>
+    <div class="links">
+      <a href="#" class="nav-item" data-goto="section-about">Info</a>
+      <a href="#" class="nav-item" data-goto="section-reviews">Slider</a>
+      <a href="#" class="nav-item" data-goto="section-gallery">Gallery</a>
+    </div>
 
-    <div class="nav-user-info">
-        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="user-icon">
-          <path fill="#000000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
-        </svg>
-      <a href="#">
-        <span class="username">Username</span>
-        <i class="material-icons">&#xE5C5;</i>
-      </a>
-      <ul class="submenu">
-        <li>
-          <a href="#">My orders</a>
-        </li>
-        <li>
-          <a href="#">My reviews</a>
-        </li>
-        <li>
-          <a href="#">My settings</a>
-        </li>
-        <li class="logout-wrapper">
-          <a href="../auth/login.html">
-            <img src="../assets/svg/logout.svg" alt="" class="logout-icon">
-            <span>Logout</span>
-          </a>
-        </li>
-      </ul>
+    <div class="nav-item">
+      <a href="./index.html">Home</a>
+    </div>
+
+    <div class="nav-item">
+      <a href="catalog/catalog.html">Catalog</a>
+    </div>
+
+    <div class="nav-item last-item">
+      <a href="catalog/catalog.html">Contact us</a>
     </div>
     
    	<img src="./assets/svg/shopping-cart.svg" alt="" class="cart-icon">
@@ -74,20 +65,45 @@
 
   <section id="section-reviews">
     <h1 class="reviews-title">What people think about us</h1>
+
     <div class="reviews-slider">
-      <div class="reviews-wrapper">
-        <div class="reviews-img reviews-img1"></div>
-        <div class="reviews-text">"It is astonishing to find a candy store with such an extensive selection."</div>
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="reviews-wrapper">
+            <div class="reviews-img reviews-img1"></div>
+            <div class="reviews-text">"It is astonishing to find a candy store with such an extensive selection."</div>
+          </div>
+          <div class="reviews-wrapper">
+            <div class="reviews-img reviews-img2"></div>
+            <div class="reviews-text">"If you're looking for a discount online candy store selling bulk candy at wholesale prices, you have come to the right place. You can buy bubblegum, licorice, chocolate, candy bars and much more on this website. "</div>
+          </div>
+          <div class="reviews-wrapper">
+            <div class="reviews-img reviews-img3"></div>
+            <div class="reviews-text">"This online shop ROCKS! They have just about every candy you can think of!"</div>
+          </div>
+        </div>
       </div>
-      <div class="reviews-wrapper">
-        <div class="reviews-img reviews-img2"></div>
-        <div class="reviews-text">"If you're looking for a discount online candy store selling bulk candy at wholesale prices, you have come to the right place. You can buy bubblegum, licorice, chocolate, candy bars and much more on this website. "</div>
-      </div>
-      <div class="reviews-wrapper">
-        <div class="reviews-img reviews-img3"></div>
-        <div class="reviews-text">"This online shop ROCKS! They have just about every candy you can think of!"</div>
+      <div class="slider-nav">
+        <span class="prev">
+            <svg viewBox="0 0 477.175 477.175">
+                <g>
+                    <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+               c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
+                </g>
+            </svg>
+        </span>
+        <span class="next">
+            <svg viewBox="0 0 477.175 477.175">
+               <g>
+                    <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                   c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+                   " />
+                </g>
+            </svg>
+        </span>
       </div>
     </div>
+
   </section>
 
   <section id="section-gallery">
@@ -105,6 +121,8 @@
 		</div>
 		<span>© 2018. All Rights Reserved Dvoretskaya Daria</span>
 	</footer>
+  <div class="overlay"></div>
+  <div id="popup"></div>
 
 <body>
 </html>

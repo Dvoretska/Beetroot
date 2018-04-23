@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <script src="../script.js" async></script>
+    <script src="catalog.js" async></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">  
@@ -16,44 +17,28 @@
 
     <div class="nav-logo-wrapper">
       <a href="../index.html"><img src="../assets/svg/shopping-store.svg" class="nav-logo-img"></a>
-      <a href="./catalog/catalog.html" class="nav-logo-title"><span>SHOP NOW</span></a>
+      <a href="#" class="nav-logo-title"><span>SHOP NOW</span></a>
     </div>
 
     <div class="nav-search">
-			<input placeholder="Search..." class="nav-search-input"></input>
-			<button class="nav-search-button">
+			<input placeholder="Search..." id="nav-search-input"></input>
+			<button id="nav-search-button">
 				<img src="../assets/svg/search.svg" class="nav-search-icon">
 			</button>	
 	  </div>
 
-    <div class="nav-user-info">
-        <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="user-icon">
-          <path fill="#000000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
-        </svg>
-      <a href="#">
-        <span class="username">Username</span>
-        <i class="material-icons">&#xE5C5;</i>
-      </a>
-      <ul class="submenu">
-        <li>
-          <a href="#">My orders</a>
-        </li>
-        <li>
-          <a href="#">My reviews</a>
-        </li>
-        <li>
-          <a href="#">My settings</a>
-        </li>
-        <li class="logout-wrapper">
-          <a href="../auth/login.html">
-            <img src="./assets/svg/logout.svg" alt="" class="logout-icon">
-            <span>Logout</span>
-          </a>
-        </li>
-      </ul>
+    <div class="nav-item">
+      <a href="../index.html">Home</a>
     </div>
-    
-   	<img src="../assets/svg/shopping-cart.svg" alt="" class="cart-icon">
+
+    <div class="nav-item last-item"">
+      <a href="catalog.html">Catalog</a>
+    </div>
+
+    <div class="cart-container">
+     	<img src="../assets/svg/shopping-cart.svg" alt="" class="cart-icon">
+      <ul class="cart"><span class="close-cart">x</span></ul>
+    </div>
   
   	<div class="auth-button">
     	<a href="../auth/login.html">Login</a>

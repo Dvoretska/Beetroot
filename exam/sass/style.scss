@@ -43,10 +43,9 @@ a:hover, a:visited {
 }
 body {
 	min-height: 100vh;
+	max-width: 1800px;
 	width: 100%;
-	border: 5px solid #fff;
 	color: #fff;
-	overflow-x: hidden;
 	header {
 		background-image: url('../assets/img/Header_bg.png');
 		@include full_background_img;
@@ -172,14 +171,9 @@ body {
 		background-image: url('../assets/img/testimonials_bg.png');
 		@include full_background_img;
 		display: flex;
-		justify-content: center;
-		padding-top: 120px;
+		padding: 120px 50px 50px;
 		width: 100%;
 		.text {
-			max-width: 50%;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
 			.text-wrapper {
 				padding-right: 15px;
 				
@@ -189,8 +183,6 @@ body {
 					font-weight: normal;
 					line-height: 0.72;
 					letter-spacing: normal;
-					margin-bottom: 62px;
-					margin-top: 84px;
 				}
 				.about__description {
 					font-family: $josefinSans;
@@ -222,10 +214,10 @@ body {
 			}
 		}
 		.images {
-			max-width: 50%;
 			.images__img1 {
 				background-image: url('../assets/img/why_choose_us_2.png');
 				@include full_background_img;
+				margin-left: 50px;
 				width: 350px;
 				height: 220px;
 			}

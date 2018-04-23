@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caca",
+      "price": "169,80",
+      "image": "https://images.ua.prom.st/963640469_w200_h200_shokobum.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Davidof",
+      "price": "69,17",
+      "image": "https://images.ua.prom.st/1045409102_w200_h200_5425001304134_2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Aroma Rich",
+      "price": "103,02",
+      "image": "https://images.ua.prom.st/1045647627_w200_h200_9002975309509.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lulu",
+      "price": "172,50",
+      "image": "https://images.ua.prom.st/840749418_w200_h200_king_eg_mag_15_g.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Minicco",
+      "price": "172,50",
+      "image": "https://images.ua.prom.st/840749418_w200_h200_king_eg_mag_15_g.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Lulu",
+      "price": "180",
+      "image": "https://images.ua.prom.st/825194646_w200_h200_wp_20170609_18_26_00_pro.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Kkuk",
+      "price": "140",
+      "image": "https://images.ua.prom.st/912057959_w200_h200_iks_dent_detskij_30_sht.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Sweet",
+      "price": "110",
+      "image": "https://images.ua.prom.st/526219451_w200_h200_palochki_kivi___isom_1.5kg.png"
+    },
+    {
+      "name": "Katy",
+      "id": 8
+    }
+  ]
+}
