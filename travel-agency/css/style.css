@@ -195,8 +195,9 @@ body #about .text .text-wrapper .about__title {
   font-family: "Aleo", Times New Roman, serif;
   font-size: 36px;
   font-weight: normal;
-  line-height: 0.72;
+  line-height: 1;
   letter-spacing: normal;
+  margin-bottom: 30px;
 }
 
 body #about .text .text-wrapper .about__description {

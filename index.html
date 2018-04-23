@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="portfolio/css/bootstrap-responsive.css">
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="portfolio/css/style.css">
-
+<script src="portfolio/script.js" async></script>
 <!--[if lt IE 9]> 
 			<style>
 				.rw-wrapper{ display: none; } 
@@ -23,14 +23,44 @@
       <div class="navigation">
         <div>
           <ul>
-            <li> <img src="portfolio/img/about-icon.png"> <a>About Me</a> </li>
-            <li> <img src="portfolio/img/portfolio-icon.png"> <a>Portfolio</a> </li>
-            <li> <img src="portfolio/img/contact-icon.png"> <a>Contact</a> </li>
+            <li class="nav-item cv"> <img src="portfolio/img/about-icon.png"> <a>About Me</a> </li>
+            <li class="nav-item portfolio"> <img src="portfolio/img/portfolio-icon.png"> <a>Portfolio</a> </li>
+            <li class="nav-item"> <img src="portfolio/img/contact-icon.png"> <a>Contact</a> </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="span7 homeabout">
+    <div class="span7 home-cv">
+      <img src="myphoto.jpg" alt="Photo">
+      <h1>Дворецкая Дарья Геннадиевна</h1>
+      <h2>Frontend developer</h2>
+      <p>Дата рождения: 30.04.1990г.</p>
+      <p>Город: Запорожье (Киев)</p>
+      <p>Телефон: +380934890436</p>
+      <p>Эл.почта: dvoretska4@gmail.com</p>
+      <h2>Опыт работы</h2>
+      <p>I have been working about half a year as a Front End developer using Vue js framework on Upwork</p>
+      <h3>My core skills:</h3>
+      <p>-HTML</p>
+      <p>-CSS</p>
+      <p>-JavaScript</p>
+      <p>-jQuery</p>
+      <p>-Vue js</p>
+      <p>-Bootstrap</p>
+      <p>-Git</p>
+      <p>-Gulp</p>
+      <p>Level of English - intermediate - upper-intermediate</p>
+      <p>I'm a fast learning, hard-working, responsible person, a good team player.</p>
+      <h2>Education:</h2>
+      <h3>Complete Higher Education</h3>
+      <p>Since 2007</p>
+      <p>Zaporizhzhya National Technical University, Electrical engineering department</p>
+      <h2>Special training:</h2>
+      <p>American English Center, 2017-2018.</p>
+      <h2>Additional information</h2>
+      <p><a href="https://www.linkedin.com/in/daria-dvoretska-340b74146/">Профиль на Linkedin</a></p>
+    </div>
+    <div class="span7 home-portfolio">
      <div class="person"> <span class="name">Home market project</span> </div>
       <div class="desciption">
         <p class="font16">My own VueJs project</p>
@@ -49,18 +79,10 @@
       </div>  
       <div class="person"> <span class="name">Beetroot academy</span> </div>
       <div class="desciption">
-        <p class="font16">HTML mockup examples</p>
+        <p class="font16">Mockup examples</p>
       </div>
       <div id="portfolio" class="white">
         <ul id="portfolio-list">
-          <li class="illustration print">
-            <div class="flip-container">
-              <div class="flipper"><a href="CV/CV.html" title="Curriculum vitae (pure html)" rel="portfolio" class="folio">
-                <div class="front">  <img src="portfolio/img/portfolio/cv.png" alt=""> </div>
-                </a>
-              </div>
-            </div>
-          </li>
           <li class="webdesign">
             <div class="flip-container">
               <div class="flipper">              
@@ -133,8 +155,44 @@
             <div class="flip-container">
               <div class="flipper">
               <a href="image-grid/index.html" rel="portfolio" title="Image grid" class="folio">
-                <div class="front">  <img src="portfolio/img/portfolio/blocks.png" alt="" > </div>
+                <div class="front"><img src="portfolio/img/portfolio/blocks.png" alt="" ></div>
                 </a>
+              </div>
+            </div>
+          </li>
+          <li class="webdesign">
+            <div class="flip-container">
+              <div class="flipper">              
+              <a  href="Bouncy/index.html"  rel="portfolio" class="folio" title="Productman" rel="portfolio">
+                <div class="front">  <img src="portfolio/img/portfolio/Bouncy.png" alt="">  </div>
+              </a>  
+              </div>
+            </div>
+          </li>
+          <li class="webdesign">
+            <div class="flip-container">
+              <div class="flipper">              
+              <a  href="travel-agency/index.html"  rel="portfolio" class="folio" title="Productman" rel="portfolio">
+                <div class="front">  <img src="portfolio/img/portfolio/travel_agency.png" alt="">  </div>
+              </a>  
+              </div>
+            </div>
+          </li>
+          <li class="webdesign">
+            <div class="flip-container">
+              <div class="flipper">              
+              <a  href="design-lab/index.html"  rel="portfolio" class="folio" title="Productman" rel="portfolio">
+                <div class="front">  <img src="portfolio/img/portfolio/design-lab.png" alt="">  </div>
+              </a>  
+              </div>
+            </div>
+          </li>
+          <li class="webdesign">
+            <div class="flip-container">
+              <div class="flipper">              
+              <a  href="our-team/index.html"  rel="portfolio" class="folio" title="Productman" rel="portfolio">
+                <div class="front">  <img src="portfolio/img/portfolio/our-team.png" alt="">  </div>
+              </a>  
               </div>
             </div>
           </li>

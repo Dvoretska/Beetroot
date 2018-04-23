@@ -12,7 +12,7 @@
 body{
 	min-height:100vh;
 	font-family: 'Lato', Arial, sans-serif;
-	width: 1920px;
+	overflow-x: hidden;
 }
 .border {
 	width:902px;
@@ -54,13 +54,16 @@ header, section, div.wrapper, .border, footer {
 
 /*HEADER*/
 header {
-    height: 1072px;
+	width: 100%;
     background: url("img/hero-bg.jpg") no-repeat;
     background-size: cover;
+    background-position: top right;
     padding-top: 285px;
 }
+.header-container {
+	max-width: 595px;
+}
 .header-title {
-	width: 591px;
 	font-size: 54px;
 	font-weight: bold;
 	letter-spacing: 8.6px;
@@ -69,7 +72,6 @@ header {
 	margin: 76px 0 35px;
 }
 .header-description {
-	width: 579px;
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 1.93;
@@ -88,7 +90,7 @@ header {
 	padding: 160px 0 153px;
 }
 #about .text {
-	width: 553px;
+	max-width: 553px;
 	line-height: 1.5;
 	margin: 67px 0 29px;
 }
@@ -97,6 +99,7 @@ header {
 #services {
 	background: url("img/services.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 128px 0 109px;
 }
 #services .title {
@@ -144,9 +147,10 @@ header {
 /*GALLERY*/
 div#gallery {
 	display: grid;
-	grid-template-columns: 548px 802px 550px;
+	grid-template-columns: 28.50% 41.5% 28.50%;
 	grid-template-rows: 237px 237px;
-	grid-gap: 10px;
+	grid-column-gap: 0.75%;
+	grid-row-gap: 10px;	
 }
 div#gallery > [class*="img"] {
 	position: relative;

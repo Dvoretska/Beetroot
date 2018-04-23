@@ -16,6 +16,9 @@ body{
 a, a:hover{
 	text-decoration: none;
 }
+.span7.home-cv {
+	display: none;
+}
 
 .avatar { width:100%;}
 .navigation > div{
@@ -57,7 +60,9 @@ a, a:hover{
 	padding-left: 20px;
 	display: inline-block;
 }
-
+.nav-item {
+	cursor: pointer;
+}
 .homeabout{
 	background: #fff;
 	margin: 0 !important;
