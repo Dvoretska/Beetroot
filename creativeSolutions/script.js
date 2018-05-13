@@ -39,6 +39,10 @@ $(document).ready(function(){
 	services.addEventListener('click', function() {
 		scrollTo(document.documentElement, futurePosition('services'), 1450);
 	});
+	var works = document.getElementById('menu__works');
+	works.addEventListener('click', function() {
+		scrollTo(document.documentElement, futurePosition('works'), 1450);
+	});
 	var contact = document.getElementById('menu__contact');
 	contact.addEventListener('click', function() {
 		scrollTo(document.documentElement, futurePosition('contact'), 1450);
@@ -79,43 +83,5 @@ $(document).ready(function(){
 		return -change/2 * (time*(time-2) - 1) + startVal;
 	};
 
-    // Add active class to navigation item and configure filters
-
-	var navigationItems = document.getElementsByClassName('navigation__item');
-	for(var i = 0; i < navigationItems.length; i++) {
-		navigationItems[i].addEventListener('click', function() {
-			for(var j = 0; j < navigationItems.length; j++) {
-				navigationItems[j].classList.remove('active');
-			}
-			this.classList.add('active');
-			filterImages(this.innerHTML);
-		})
-	}
-
-	function filterImages(filterItem='All works') {
-		var galleryContainer = document.getElementsByClassName('gallery__container')[0];
-		galleryContainer.innerHTML = '';
-		for(let filter of dataImages) {
-			var div = document.createElement('div');
-			div.classList.add('my_column');
-			for(var i = 0; i < filter.length; i++) {
-				if(filterItem == 'All works' || filterItem == filter[i].type) {
-					var innerDiv = document.createElement('div');
-					innerDiv.classList.add('gallery__img');
-					innerDiv.classList.add(filter[i].class);
-					div.appendChild(innerDiv);
-				}					
-			}
-			galleryContainer.appendChild(div);
-		}
-	}
-
-	const dataImages = [[{class: 'gallery__img1', type: 'Print'}, {class: 'gallery__img2', type: 'Print'}, {class: 'gallery__img3', type: 'Print'}],
-						[{class: 'gallery__img4', type: 'Branding'}, {class: 'gallery__img5', type: 'Branding'}, {class: 'gallery__img6', type: 'Branding'}],
-						[{class: 'gallery__img7', type: 'Web'}, {class: 'gallery__img8', type: 'Web'}, {class: 'gallery__img9', type: 'Web'}],
-						[{class: 'gallery__img10', type: 'HTML'}, {class: 'gallery__img11', type: 'HTML'}, {class: 'gallery__img12', type: 'HTML'}]]
-
-
-	filterImages();
 });
 
