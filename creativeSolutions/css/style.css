@@ -63,6 +63,12 @@ body nav .menu {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  body nav .menu {
+    flex-direction: column;
+  }
+}
+
 body nav .menu .menu__item {
   color: #ffffff;
   font-family: "proxima_nova_rgbold", Arial, sans-serif;
@@ -503,7 +509,7 @@ body #contact .map-wrapper .form-wrapper .get-in-touch-title {
 body #contact .map-wrapper .form-wrapper form {
   pointer-events: auto;
   height: 100%;
-  width: 54%;
+  width: 860px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -511,14 +517,37 @@ body #contact .map-wrapper .form-wrapper form {
   flex-direction: column;
 }
 
+@media screen and (max-width: 992px) {
+  body #contact .map-wrapper .form-wrapper form {
+    width: 660px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #contact .map-wrapper .form-wrapper form {
+    width: 80%;
+  }
+}
+
 body #contact .map-wrapper .form-wrapper form .input-wrapper {
   display: flex;
   width: 100%;
-  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body #contact .map-wrapper .form-wrapper form .input-wrapper {
+    flex-direction: column;
+  }
 }
 
 body #contact .map-wrapper .form-wrapper form .input-wrapper input:first-child {
   margin-right: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  body #contact .map-wrapper .form-wrapper form .input-wrapper input:first-child {
+    margin-bottom: 27px;
+  }
 }
 
 body #contact .map-wrapper .form-wrapper form input, body #contact .map-wrapper .form-wrapper form textarea {
@@ -531,7 +560,7 @@ body #contact .map-wrapper .form-wrapper form input, body #contact .map-wrapper 
 
 body #contact .map-wrapper .form-wrapper form input:focus, body #contact .map-wrapper .form-wrapper form textarea:focus {
   background-color: #ebebeb;
-  border: 1px solid #9f9acf;
+  border: 2px solid #9f9acf;
 }
 
 body #contact .map-wrapper .form-wrapper form input::placeholder, body #contact .map-wrapper .form-wrapper form textarea::placeholder {
@@ -570,13 +599,18 @@ body #contact .map-wrapper .form-wrapper form button:hover {
   box-shadow: none;
 }
 
+@media screen and (max-width: 768px) {
+  body #contact .map-wrapper .form-wrapper form button {
+    margin: 20px 0;
+  }
+}
+
 body #contact .map-wrapper .form-wrapper #scroll-up {
   pointer-events: auto;
   cursor: pointer;
   height: 84px;
   width: 84px;
-  background-color: #9f9acf;
-  opacity: 0.5;
+  background-color: rgba(159, 154, 207, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,9 +619,25 @@ body #contact .map-wrapper .form-wrapper #scroll-up {
   right: 130px;
 }
 
+body #contact .map-wrapper .form-wrapper #scroll-up:hover {
+  background-color: #9f9acf;
+}
+
+@media screen and (max-width: 1200px) {
+  body #contact .map-wrapper .form-wrapper #scroll-up {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #contact .map-wrapper .form-wrapper #scroll-up {
+    right: 0;
+    bottom: 20px;
+  }
+}
+
 body #contact .map-wrapper .form-wrapper #scroll-up img {
-  opacity: 1;
-  height: 21;
+  height: 21px;
   width: 36px;
 }
 
@@ -635,13 +685,19 @@ body #contact .map-wrapper .form-wrapper .phone-wrapper {
 }
 
 body footer {
+  width: 100%;
+  padding: 75px 50px 80px;
+  background-color: #9f9acf;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 0 50px;
-  height: 190px;
-  background-color: #9f9acf;
+}
+
+@media screen and (max-width: 768px) {
+  body footer {
+    padding: 25px 20px 30px;
+    flex-direction: column;
+  }
 }
 
 body footer .footer__description {
@@ -650,11 +706,25 @@ body footer .footer__description {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.36px;
-  display: flex;
+  white-space: nowrap;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body footer .footer__description {
+    margin-bottom: 15px;
+  }
 }
 
 body footer .footer__icons {
+  margin-left: auto;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  body footer .footer__icons {
+    margin: 0 auto;
+  }
 }
 
 body footer .footer__icons .footer__social-link {
