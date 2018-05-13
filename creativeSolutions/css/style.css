@@ -40,12 +40,12 @@ body nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 3;
   color: #fff;
-  padding: 36px 150px;
+  padding: 36px 50px;
 }
 
 body nav .nav__logo {
@@ -316,6 +316,7 @@ body #works {
   background-position: center;
   height: 1000px;
   margin-bottom: 54px;
+  overflow: hidden;
 }
 
 body #works .works-title {
@@ -468,6 +469,7 @@ body #contact {
 body #contact .map-wrapper {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 body #contact .map-wrapper #map {
@@ -527,6 +529,11 @@ body #contact .map-wrapper .form-wrapper form input, body #contact .map-wrapper 
   background-color: rgba(235, 235, 235, 0.7);
 }
 
+body #contact .map-wrapper .form-wrapper form input:focus, body #contact .map-wrapper .form-wrapper form textarea:focus {
+  background-color: #ebebeb;
+  border: 1px solid #9f9acf;
+}
+
 body #contact .map-wrapper .form-wrapper form input::placeholder, body #contact .map-wrapper .form-wrapper form textarea::placeholder {
   color: white;
   font-family: "PT Sans", Arial, sans-serif;
@@ -551,12 +558,16 @@ body #contact .map-wrapper .form-wrapper form button {
   line-height: 70px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  border: none;
-  position: relative;
   box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.7);
   margin: 55px 0;
   pointer-events: auto;
   cursor: pointer;
+  border: 2px solid transparent;
+}
+
+body #contact .map-wrapper .form-wrapper form button:hover {
+  border: 2px solid #fff;
+  box-shadow: none;
 }
 
 body #contact .map-wrapper .form-wrapper #scroll-up {
@@ -578,87 +589,49 @@ body #contact .map-wrapper .form-wrapper #scroll-up img {
   opacity: 1;
   height: 21;
   width: 36px;
-  margin: 0;
+}
+
+body #contact .map-wrapper .form-wrapper .touch-item {
+  display: flex;
+  position: absolute;
+  right: -260px;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+body #contact .map-wrapper .form-wrapper .touch-item:hover {
+  transform: translateX(-260px);
+}
+
+body #contact .map-wrapper .form-wrapper .touch-item .touch-img {
+  height: 90px;
+  width: 90px;
+  background-color: #9f9acf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body #contact .map-wrapper .form-wrapper .touch-item .touch-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 260px;
+  color: #665f60;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgba(235, 235, 235, 0.7);
 }
 
 body #contact .map-wrapper .form-wrapper .house-wrapper {
-  display: flex;
-  position: absolute;
   top: 219px;
-  right: 0;
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-body #contact .map-wrapper .form-wrapper .house-wrapper .house-img {
-  height: 90px;
-  width: 90px;
-  background-color: #9f9acf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body #contact .map-wrapper .form-wrapper .house-wrapper .house-img:hover ~ .house-text {
-  display: block;
-}
-
-body #contact .map-wrapper .form-wrapper .house-wrapper .house-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 260px;
-  color: #665f60;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: rgba(235, 235, 235, 0.7);
-  display: none;
-}
-
-body #contact .map-wrapper .form-wrapper .house-wrapper .house-text:hover {
-  display: block;
 }
 
 body #contact .map-wrapper .form-wrapper .phone-wrapper {
-  display: flex;
-  position: absolute;
   top: 310px;
-  right: 0;
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-body #contact .map-wrapper .form-wrapper .phone-wrapper .phone {
-  height: 90px;
-  width: 90px;
-  background-color: #9f9acf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body #contact .map-wrapper .form-wrapper .phone-wrapper .phone:hover ~ .phone-text {
-  display: block;
-}
-
-body #contact .map-wrapper .form-wrapper .phone-wrapper .phone-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 260px;
-  color: #665f60;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: rgba(235, 235, 235, 0.7);
-  display: none;
-}
-
-body #contact .map-wrapper .form-wrapper .phone-wrapper .phone-text:hover {
-  display: block;
 }
 
 body footer {
@@ -666,7 +639,7 @@ body footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 150px;
+  padding: 0 50px;
   height: 190px;
   background-color: #9f9acf;
 }
@@ -677,14 +650,37 @@ body footer .footer__description {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.36px;
+  display: flex;
 }
 
-body footer .footer__icons .icons__item {
+body footer .footer__icons {
+  display: flex;
+}
+
+body footer .footer__icons .footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.25s;
   cursor: pointer;
   margin-left: 25px;
-  display: inline-block;
+  background-color: #ebebeb;
 }
 
-body footer .footer__icons .icons__item:first-child {
+body footer .footer__icons .footer__social-link:first-child {
   margin-left: 0;
+}
+
+body footer .footer__icons .footer__social-link:hover {
+  transform: scale(1.1);
+}
+
+body footer .footer__icons .footer__social-link .footer__socail-icon {
+  display: inline-block;
+  width: 25px;
+  height: 22px;
 }
