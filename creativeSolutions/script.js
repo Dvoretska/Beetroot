@@ -1,14 +1,25 @@
 $(document).ready(function(){
 
-	var menuItems = document.getElementsByClassName('menu__item');
-	for(var i = 0; i < menuItems.length; i++) {
-		menuItems[i].addEventListener('click', function() {
-			for(var j = 0; j < menuItems.length; j++) {
-				menuItems[j].classList.remove('selected');
-			}
-			this.classList.add('selected');
-		})
-	}
+	$(".menu__burger-icon").on("click", function (e) {
+		e.preventDefault();
+		if ($(this).hasClass('burger-open')) {
+			$(".menu").css("transform", "translate(0, 0)");
+			$(this).css("display", "none");
+			$(".burger-close").css("display", "block");
+		} else {
+			$(".menu").removeAttr('style');
+			$(this).removeAttr('style');
+			$(".burger-open").css("display", "block");
+		}
+	});
+
+	$(window).on('resize', function () {
+		if ($(window).width() > 768) {
+			$(".burger-open").removeAttr('style');
+			$(".burger-close").removeAttr('style');
+			$(".menu").removeAttr('style');
+		}
+	});
 
   // Configure sliders
 
@@ -17,9 +28,38 @@ $(document).ready(function(){
     dots: true
   });  
   $('.team__slider').slick({
-  	arrows: true,
-    dots: false
+  	infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		speed: 1000,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true
+				}
+			}
+		]
   });
+  	$('.news-arrows-team').on('click', function (e) {
+  		e.preventDefault();
+		if ($(this).hasClass("news-arrows-prev-team")) {
+			$('.team__slider').slick("slickPrev");
+		} else {
+			$('.team__slider').slick("slickNext");
+		}
+	});
 
   // Configure scroll
 
