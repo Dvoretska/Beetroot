@@ -21,12 +21,30 @@ $(document).ready(function(){
 		}
 	});
 
+
+	// Masonry
+	$('.services__cards').masonry({
+		// options
+		itemSelector: '.services__card',
+		columnWidth: 0
+	});
+
   // Configure sliders
 
-  $('.work__slider').slick({
-  	arrows: true,
-    dots: true
-  });  
+  $('.works__slider').slick({
+  	infinite: true,
+	speed: 1000,
+	dots: true,
+	arrows: false
+  });
+  $('.news-arrows').on('click', function (e) {
+  	e.preventDefault();
+	if ($(this).hasClass("news-arrows-prev")) {
+		$('.works__slider').slick("slickPrev");
+	} else {
+		$('.works__slider').slick("slickNext");
+	}
+	});  
   $('.team__slider').slick({
   	infinite: true,
 		slidesToShow: 3,
