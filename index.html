@@ -3,62 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Responsive 'Flat Profile' HTML Portfolio Template</title>
-<link rel="stylesheet" type="text/css" href="portfolio/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="portfolio/css/bootstrap-responsive.css">
+<title>Portfolio</title>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="portfolio/css/style.css">
-<script src="portfolio/script.js" async></script>
-<!--[if lt IE 9]> 
-			<style>
-				.rw-wrapper{ display: none; } 
-				.rw-sentence-IE{ display: block;  }
-			</style>
-	<![endif]-->
+<link rel="stylesheet" type="text/css" href="portfolio/css/myStyle.css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
 </head>
-<body data-post="http://www.egrappler.com/flat-responsive-portfolio-website-template-for-free-download/">
-<div class="container topbottom">
-  <div class="row-fluid">
-    <div class="span5"> <img src="portfolio/img/avatar.jpg" alt="Profile Avatar" class="avatar">
-      <div class="navigation">
-        <div>
-          <ul>
-            <li class="nav-item cv"> <img src="portfolio/img/about-icon.png"> <a>About Me</a> </li>
-            <li class="nav-item portfolio"> <img src="portfolio/img/portfolio-icon.png"> <a>Portfolio</a> </li>
-            <li class="nav-item"> <img src="portfolio/img/contact-icon.png"> <a>Contact</a> </li>
-          </ul>
-        </div>
-      </div>
+<body>
+<div class="container">
+    <div class="span3"> 
+<!--       <img src="portfolio/img/12745947_10205804305608710_7735813904788949974_n_601x10682.jpg" alt="Profile Avatar" class="avatar"> -->
+      <div class="avatar"></div>
+        <nav class="navigation cl-effect-2">
+          <a class="nav-item cv" id="cv-item">
+            <span data-hover="About Me" class="nav-span">About Me</span>
+            <span data-id="cv-item" class="arrow-left"></span>
+          </a>
+          <a class="nav-item portfolio" id="portfolio-item">
+            <span data-hover="Portfolio" class="nav-span">Portfolio</span>
+            <span data-id="portfolio-item" class="arrow-left"></span>
+          </a>
+          <a class="nav-item contact" id="contact-item">
+            <span data-hover="Contact" class="nav-span">Contact</span>
+            <span data-id="contact-item" class="arrow-left"></span>
+          </a>
+        </nav>
     </div>
     <div class="span7 home-cv">
-      <img src="myphoto.jpg" alt="Photo">
-      <h1>Дворецкая Дарья Геннадиевна</h1>
+      <h1 class="about-title">Hi! I'm Dasha Dvoretskaya</h1>
+      <p class="about-description">I'm Frontend developer with a passion for creating fully responsive, adaptive, interactive and modern websites. As a web developer I use my attention to details, my love for learning and exploring new technologies, my desire to make simple and elegant things. Currently I’m seeking a position with a good company with room for growth and opportunity for advancement.</p>
+      <h2 class="about-subtitle">My core skills:</h2>
+      <ul class="skills-menu">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>SCSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Git</li>
+        <li>Vue js</li>
+      </ul>
+      
+      
+      
+      <h2 class="about-subtitle">Working experience:</h2>
+      <h3>Upwork, Frontend developer</h3>
+      <p>I have been working about half a year as a Frontend developer using Vue js framework on Upwork</p>
+      <h2 class="about-subtitle">Education:</h2>
+      <h3>Complete higher education:</h3>
+      <h4>September 2007 — June 2012</h4>
+      <h4>Zaporizhzhya National Technical University, Electrical engineering department.</h4>
+      <h2 class="about-subtitle">Additional education:</h2>
+      <h4>January 2018 — May 2018</h4>
+      <h4>Beetroot Аcademy, Front-end development, Zaporizhzhya.</h4>
+      <p>I studied HTML5, CSS3, JavaScript, jQuery, Git, Bootstrap and React js.</p>
+      <br>
+      <h4>2017-2018</h4>
+      <h4>American English Center</h4>
+      <span>3 semesters</span>
+      <h2>Additional information:</h2>
+      <p><a href="https://www.linkedin.com/in/daria-dvoretska-340b74146/">My LinkedIn account</a></p>
       <h2>Frontend developer</h2>
-      <p>Дата рождения: 30.04.1990г.</p>
-      <p>Город: Запорожье (Киев)</p>
-      <p>Телефон: +380934890436</p>
-      <p>Эл.почта: dvoretska4@gmail.com</p>
-      <h2>Опыт работы</h2>
-      <p>I have been working about half a year as a Front End developer using Vue js framework on Upwork</p>
-      <h3>My core skills:</h3>
-      <p>-HTML</p>
-      <p>-CSS</p>
-      <p>-JavaScript</p>
-      <p>-jQuery</p>
-      <p>-Vue js</p>
-      <p>-Bootstrap</p>
-      <p>-Git</p>
-      <p>-Gulp</p>
-      <p>Level of English - intermediate - upper-intermediate</p>
-      <p>I'm a fast learning, hard-working, responsible person, a good team player.</p>
-      <h2>Education:</h2>
-      <h3>Complete Higher Education</h3>
-      <p>Since 2007</p>
-      <p>Zaporizhzhya National Technical University, Electrical engineering department</p>
-      <h2>Special training:</h2>
-      <p>American English Center, 2017-2018.</p>
-      <h2>Additional information</h2>
-      <p><a href="https://www.linkedin.com/in/daria-dvoretska-340b74146/">Профиль на Linkedin</a></p>
+      <p>Birthdate: 30 April 1990</p>
+      <p>City:  Zaporizhzhya</p>
+      <p>Phone: 093 489 04 36</p>
+      <p>E-mail: dvoretska4@gmail.com</p>
+      <p>Languages: Russian, Ukrainian, English</p>
+      <h2>Summary:</h2>
+      
     </div>
     <div class="span7 home-portfolio">
      <div class="person"> <span class="name">Home market project</span> </div>
@@ -69,7 +81,7 @@
         <ul id="portfolio-list">
           <li class="illustration print">
             <div class="flip-container">
-              <div class="flipper"><a href="https://home-market.herokuapp.com/login" title="Curriculum vitae (pure html)" rel="portfolio" class="folio">
+              <div class="flipper"><a href="https://home-market.herokuapp.com" title="Curriculum vitae (pure html)" rel="portfolio" class="folio">
                 <div class="front">  <img src="portfolio/img/portfolio/images.jpeg" alt=""> </div>
                 </a>
               </div>
@@ -89,74 +101,6 @@
               <a  href="Productman/productman.html"  rel="portfolio" class="folio" title="Productman" rel="portfolio">
                 <div class="front">  <img src="portfolio/img/portfolio/productman.png" alt="" >  </div>
               </a>  
-              </div>
-            </div>
-          </li>
-          <li class="photoghraphy">
-            <div class="flip-container">
-              <div class="flipper">
-              
-              <a  href="Text_editor/text_editor.html"  rel="portfolio" class="folio" title="Text editor">
-                <div class="front">  <img src="portfolio/img/portfolio/text_editor.png" alt="" > </div>
-              </a> 
-                
-              </div>
-            </div>
-          </li>
-          <li class="animation print">
-            <div class="flip-container">
-                <div class="flipper">
-                <a href="css-diner-shopping-list/dinner.html" rel="portfolio" title="Dinner" class="folio">
-                    <div class="front">
-                    	 <img src="portfolio/img/portfolio/dinner.png" alt="" />
-                    </div>                    
-                 </a>                       
-               </div>
-           </div>
-            </li>
-          <li class="animation">
-            <div class="flip-container">
-              <div class="flipper">
-                <a href="css-weather-forecast/css-weather-forecast.html" title="Weather forecast"  rel="portfolio" class="folio" title="Weather forecast">
-                <div class="front"> <img src="portfolio/img/portfolio/weather.png" alt="" >  </div>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="webdesign print">
-            <div class="flip-container">
-              <div class="flipper">
-                <a href="cup-plans/index.html" rel="portfolio" title="Cup plans"  class="folio">
-                <div class="front">  <img src="portfolio/img/portfolio/cups.png" alt="" >  </div>
-                </a>
-                
-              </div>
-            </div>
-          </li>
-          <li class="photoghraphy">
-            <div class="flip-container">
-              <div class="flipper">
-              <a href="daily-form/index.html" rel="portfolio" title="Daily form"  class="folio">
-                <div class="front">  <img src="portfolio/img/portfolio/form.png" alt="" > </div>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="illustration">
-            <div class="flip-container">
-              <div class="flipper">
-              <a href="huge-search/huge-search.html" rel="portfolio" title="Huge search"  class="folio">
-                <div class="front"> <img src="portfolio/img/portfolio/search.png" alt="" >  </div>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="illustration">
-            <div class="flip-container">
-              <div class="flipper">
-              <a href="image-grid/index.html" rel="portfolio" title="Image grid" class="folio">
-                <div class="front"><img src="portfolio/img/portfolio/blocks.png" alt="" ></div>
-                </a>
               </div>
             </div>
           </li>
@@ -199,9 +143,8 @@
         </ul>
       </div>      
     </div>
-  </div>
 </div>
-
+<script src="portfolio/script.js" defer></script>
 </body>
 </html>
 

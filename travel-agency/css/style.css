@@ -304,6 +304,12 @@ body #actions .actions__wrapper .actions__item p {
   margin-top: 25px;
 }
 
+body .booking {
+  padding: 10%;
+  height: 100vh;
+  display: flex;
+}
+
 body .booking .booking__box {
   max-width: 540px;
   background-color: #232323;
@@ -366,7 +372,8 @@ body #booking--first {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 32% 0 18% 14%;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 body #booking--second {
@@ -374,7 +381,8 @@ body #booking--second {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 32% 0 14% 50%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 body #reviews {
@@ -402,6 +410,12 @@ body #reviews .reviews__wrapper {
   display: flex;
   width: 63%;
   justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+  body #reviews .reviews__wrapper {
+    flex-direction: column;
+  }
 }
 
 body #reviews .reviews__wrapper .reviews__img {

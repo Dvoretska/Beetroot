@@ -276,6 +276,9 @@ body {
 		}	
 	}
 	.booking {
+		padding: 10%;
+		height: 100vh;
+		display: flex;
 		.booking__box {
 			max-width: 540px;
 			background-color: #232323;
@@ -331,12 +334,14 @@ body {
 	#booking--first {
 		background-image: url('../assets/img/book_now_1.png');
 		@include full_background_img;
-		padding: 32% 0 18% 14%;
+		justify-content: flex-start;
+		align-items: flex-end;
 	}
 	#booking--second {
 		background-image: url('../assets/img/rectangle-4141.png');
 		@include full_background_img;
-		padding: 32% 0 14% 50%;
+		justify-content: flex-end;
+		align-items: flex-end;
 	}
 	#reviews {
 		display: flex;
@@ -358,6 +363,9 @@ body {
 			display: flex;
 			width: 63%;
 			justify-content: center;
+			@media all and (max-width: 768px) {
+				flex-direction: column;
+			}
 			.reviews__img {
 				background-image: url('../assets/img/testimonials_1.png');
 				@include full_background_img;
