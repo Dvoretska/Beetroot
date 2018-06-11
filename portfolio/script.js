@@ -1,12 +1,15 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-	document.getElementsByClassName('home-portfolio')[0].style.display = 'none';
-	document.getElementsByClassName('home-cv')[0].style.display = 'block';
-});
-
 var portfolio = document.getElementsByClassName('portfolio')[0];
 var cv = document.getElementsByClassName('cv')[0];
 var contact = document.getElementsByClassName('contact')[0];
 var arrow = document.getElementsByClassName('arrow-left');
+var cvSection = document.getElementsByClassName('home-cv')[0];
+var portfolioSection = document.getElementsByClassName('home-portfolio')[0];
+var contactSection = document.getElementsByClassName('home-contact')[0];
+var sections =  document.getElementsByClassName('span7');
+
+document.addEventListener("DOMContentLoaded", function() {
+	displaySection('home-portfolio')
+});
 
 function setArrow(id) {
 	for(var i =0; i < arrow.length; i++) {
@@ -16,18 +19,23 @@ function setArrow(id) {
 		}
 	}
 }
+function displaySection(section) {
+	for(var i =0; i < sections.length; i++) {
+		sections[i].style.display = 'none';
+		if(sections[i].className.includes(section)) {
+			sections[i].style.display = 'block';
+		}
+	}
+}
 cv.addEventListener('click', function() {
 	setArrow(this.getAttribute('id'))
-	document.getElementsByClassName('home-portfolio')[0].style.display = 'none';
-	document.getElementsByClassName('home-cv')[0].style.display = 'block';
+	displaySection('home-cv')
 })
 portfolio.addEventListener('click', function() {
 	setArrow(this.getAttribute('id'))
-	document.getElementsByClassName('home-portfolio')[0].style.display = 'block';
-	document.getElementsByClassName('home-cv')[0].style.display = 'none';
+	displaySection('home-portfolio')
 })
 contact.addEventListener('click', function() {
 	setArrow(this.getAttribute('id'))
-	document.getElementsByClassName('home-portfolio')[0].style.display = 'block';
-	document.getElementsByClassName('home-cv')[0].style.display = 'none';
+	displaySection('home-contact')
 })
