@@ -5,12 +5,15 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
-/*	font-family: 'Lato', sans-serif;*/
+
 }
-ul {
-	list-style: none;
-	padding-left: 20px;
+h1, h2, h3, h4, p {
+	padding: 0;
 	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
 }
 .container {
 	display: flex;
@@ -52,6 +55,7 @@ nav .nav-item {
 	top: 100%;
 	content: attr(data-hover);
 	font-weight: 700;
+	color: rgb(58,146,228);
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -119,19 +123,21 @@ nav .nav-item {
 
 .span7 {
 	padding: 20px 5% 0 35%;
+	box-shadow: inset 0 20px 50px -20px rgba(0,0,0,.06);
 }
 .about-title {
 	font-size: 36px;
-	text-indent: 25px;
 	color: rgba(10,60,150, 0.8);
 	color: black;
+	margin-bottom: 25px;
+	margin-top: 25px;
 /*    text-shadow: 1px 0px 0px #def, 0 0 0 #000, 0px 0px 0px #def;*/
 }
 .about-description {
 	font-size: 22px;
 	line-height: 1.3;
-	text-indent: 25px;
 	position: relative;
+	margin-bottom: 25px;
 }
 /*.about-description:before {
 	height: 1px;
@@ -146,25 +152,31 @@ nav .nav-item {
 .about-subtitle {
 	font-size: 28px;
 	position: relative;
+	margin-bottom: 15px;
+	margin-top: 35px;
 }
 .about-subtitle:before {
 	content: "";
 	position: absolute;
 	bottom: 0;
-	left: -5px;
-	width: 30px;
-	height: 15px;
-	background-color: rgba(10,60,150, .3);
+	left: -10px;
+	width: 5px;
+	height: 30px;
+	background-color: rgb(48, 113, 173);
+}
+.skills-menu {
+	list-style: none;
+	padding-left: 20px;
 }
 .skills-menu li {
 	font-size: 22px;
 	position: relative;
 	padding-left: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 .skills-menu li:before {
 	content: "";
-	background-image: url('../img/checked.svg');
+	background-image: url('../img/checkmark.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -172,7 +184,29 @@ nav .nav-item {
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 13px;
-	height: 13px;
-	fill: turquoise;
+	width: 15px;
+	height: 15px;
+}
+.subtitle-description {
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.subtitle-text {
+	font-size: 18px;
+}
+.subtitle-date {
+	font-size: 18px;
+	color: #7a7a7a;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+.subtitle-location {
+	font-size: 18px;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+.profile-link {
+	margin-bottom: 50px;
+	display: inline-block;
+	font-size: 18px;
 }
