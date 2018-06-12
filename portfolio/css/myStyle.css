@@ -27,7 +27,7 @@ a {
 	width: 100%;
 	align-items: center;
 }
-nav .nav-item {
+.nav-item {
     overflow: hidden;
     padding: 0;
     height: 1.2em;
@@ -44,6 +44,10 @@ nav .nav-item {
 	cursor: pointer;
 	width: 100%;
 	text-align: center;
+}
+.active {
+	font-weight: 700;
+	color: antiquewhite;
 }
 .cl-effect-2 .nav-item .nav-span {
 	position: relative;
@@ -105,17 +109,6 @@ nav .nav-item {
 	margin-bottom: 35px;
 	border: 2px solid white;
 }
-.layer {
-	background-image: url('../img/imageedit_24_2668129123.png');
-	background-size: 100% 150px;
-	background-repeat: no-repeat;
-	background-position: top;
-	position: absolute;
-	width: 100%;
-	height: 150px;
-	top: 0;
-	left: 0;
-}
 .arrow-left {
 	position: absolute;
 	right: 0;
@@ -140,9 +133,6 @@ nav .nav-item {
 	min-height: 100vh;
 	box-shadow: inset 0 20px 50px -20px rgba(0,0,0,.06);
 	display: none;
-}
-.span7.home-cv {
-    width: calc(100% - 17px);
 }
 .span7.home-cv {
 	display: block;
@@ -196,7 +186,7 @@ nav .nav-item {
 	bottom: 0;
 	left: -10px;
 	width: 5px;
-	height: 30px;
+	height: 100%;
 	background-color: #5f7ff4;
 }
 .subtitle-description {
@@ -230,11 +220,10 @@ hr {
     padding-top: 25px;
 }
 .webdesign-box {
-    display: flex;
     margin-top: 30px;
 }
 .webdesign-description {
-    margin-left: 15px;
+    margin-top: 15px;
     font-style: italic;
     font-size: 18px;
 }
@@ -242,14 +231,28 @@ hr {
 	width: 19%;
 	height: 19%;
 	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid #eee;
+}
+.webdesign:hover {
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
 }
 .webdesign.market {
     width: 30%;
     height: 30%;
+	border: none;
 }
-.webdesign img {
+.webdesign a {
 	width: 100%;
 	height: 100%;
+	display: inline-block;
+}
+.webdesign img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
 }
 .beetroot {
     font-size: 22px;
@@ -300,4 +303,53 @@ hr {
 .bottom-position {
     position: absolute;
     bottom: 40px;
+}
+
+@media screen and (max-width:768px){
+	.container {
+		flex-direction: column;
+	}
+	.span3 {
+		width: 100%;
+		height: 300px;
+		justify-content: space-around;
+	}
+	.avatar {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.navigation {
+		flex-direction: row;
+	}
+	.span-icons.bottom-position {
+		display: none;
+	}
+	.arrow-left {
+		border-right: 10px solid transparent;
+		}
+	.span7 {
+		margin-top: 300px;
+		padding-left: 5%;
+		min-height: 0;
+	}
+}
+@media screen and (min-width:320px) and (max-width: 480px){
+	nav .nav-item {
+		font-size: 1em;
+	}
+	.span7 {
+		padding: 0 20px 30px;
+	}
+	.about-title {
+		font-size: 28px;
+	}
+	.about-description {
+		font-size: 16px;
+	}
+	.span7.home-contact {
+		padding-top: 25px;
+	}
+	.span7.home-portfolio .about-subtitle {
+		margin-top: 25px;
+	}
 }

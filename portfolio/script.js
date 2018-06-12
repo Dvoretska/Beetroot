@@ -8,7 +8,16 @@ var contactSection = document.getElementsByClassName('home-contact')[0];
 var sections =  document.getElementsByClassName('span7');
 
 document.addEventListener("DOMContentLoaded", function() {
-	displaySection('home-portfolio')
+	displaySection('home-cv')
+	var menuItems = document.getElementsByClassName('nav-item');
+	for(var i = 0; i < menuItems.length; i++) {
+		menuItems[i].addEventListener('click', function() {
+			for(var j = 0; j < menuItems.length; j++) {
+				menuItems[j].classList.remove('active');
+			}
+			this.classList.add('active');
+		})
+	}
 });
 
 function setArrow(id) {
