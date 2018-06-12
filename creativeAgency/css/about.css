@@ -1,0 +1,312 @@
+.first-section{
+    height:500px;
+    background-image:url('../assets/img/740.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center right;
+}
+header{
+    height:100px;
+}
+.first-row{
+    margin-top:100px;
+}
+.about-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.about-heading-options a {
+    color: #60606e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-right: 15px;
+    position: relative;
+}
+.about-heading-options a:first-child:after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+/*about us*/
+.about-us-section {
+	margin-top: 100px;
+}
+.about-us-title {
+    margin-bottom: 15px;
+}
+.about-us-note {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about-us-description {
+    line-height: 30px;
+}
+/*about us*/
+
+/*benefits*/
+.benefits {
+    margin-top: 100px;
+}
+.benefit-title {
+    margin-bottom: 10px;
+}
+.benefit-icon {
+    background-color: #7beec7;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+.benefit-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.service-title {
+    margin-left: 20px;
+}
+/*benefits*/
+
+/*team*/
+.team {
+    margin-top: 100px;
+}
+.gallery-item img:first-child {
+    margin-bottom: 31px;
+}
+/*team*/
+
+/*read more*/
+.read-more {
+    margin-top: 30px;
+}
+.read-more-container {
+    height: 150px;
+    background-color: #EFEEF0;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+.read-more-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 48px;
+}
+.green-button {
+    right: 30px;
+}
+/*read more*/
+
+/*testimonials*/
+.testimonials {
+    margin-top: 100px;
+}
+.partner-logo-item {
+    height: 100px;
+}
+.testimonials-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+.testimonials-user {
+    background-color: #7beec7;
+    padding: 0 9px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 61px;
+}
+.carousel-indicators li {
+    background-color: #60606e;
+    cursor: pointer;
+}
+.carousel-indicators .active {
+    background-color: #7beec7;
+}
+/*testimonials*/
+.feedback {
+    margin-top: 100px;
+}
+
+@media screen and (max-width:991px){
+    .hero {
+        margin-bottom: 50px;
+    }
+    .benefits {
+        margin-top: 50px;
+    }
+    .first-row.about-us-first-row {
+        margin-top:70px;
+    }
+    .about-us-section {
+        margin-top: 50px;
+    }
+    .title-row {
+        margin-bottom: 30px;
+    }
+    .service-title {
+        line-height: 20px;
+    }
+    .benefits-second-col {
+        margin-bottom: 3rem;
+    }
+    .benefits-last-row {
+        display: flex;
+    }
+    .resp-col {
+        min-width: calc(50% - 15px);
+        margin-right: 30px;
+    }
+    .team {
+        margin-top: 0;
+    }
+    .gallery-item:first-child {
+        margin-bottom: 31px;
+    }    
+    .gallery-item:last-child, .gallery-item:nth-child(2) {
+        text-align: right;
+    }
+    .read-more-container {
+        flex-direction: column;
+    }
+    .read-more-container .green-button {
+        bottom: 10px;
+    }
+    .testimonials {
+        margin-top: 50px;
+    }
+    .testimonials-user {
+        margin-bottom: 50px;
+    }
+    .testimonials-col {
+        margin-bottom: 1.5rem;
+    }
+    .testimonials-last-row {
+        display: flex;
+    }
+    .testimonials-last-row .partner-logo-item:nth-child(2) {
+        margin-right: 0;
+        margin-left: 15px;
+    }    
+    .testimonials-last-row .partner-logo-item:nth-child(1) {
+        margin-right: 15px;
+    }
+    .testimonials-last-row .partner-logo-item {
+        width: 100%;
+    }
+    .feedback {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:575px){
+    .gallery-item {
+        text-align: center !important;
+    }
+    .gallery-item:nth-child(2), .gallery-item:nth-child(3) {
+        margin-bottom: 30px;
+    }
+    .about-us-title {
+        margin-top: 25px;
+    }
+    .benefits {
+        margin-top: 15px;
+    }
+    .benefits-last-row {
+        flex-direction: column;
+        margin-top: 48px;
+    }
+    .benefit-title {
+        margin-top: 20px;
+    }
+    .testimonials-last-row {
+        display: block;
+        margin-top: 25px;
+    }
+    .testimonials-last-row .partner-logo-item:nth-child(2) {
+        margin-left: 0;
+    }
+    .read-more-container {
+        height: 200px;
+    }
+    .read-more-text {
+        line-height: 38px;
+    }
+}
+@media screen and (max-width:320px){ 
+    .first-section {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .about-heading {
+        font-size: 28px;
+    }
+    .first-row {
+        margin-top: 0;
+    }
+    header {
+        height: 70px;
+    }
+    .about-us-section, .benefits {
+        margin-top: 20px;
+    }
+    .benefits-col {
+        margin-bottom: 20px !important;
+    }
+    .benefits-last-row {
+        flex-direction: column;
+    }
+    .resp-col {
+        min-width: calc(100% - 15px);
+        margin-right: 30px;
+    }
+    .gallery-item, .gallery-item img:first-child {
+        margin-bottom: 10px !important;
+    }
+    .read-more {
+        margin-top: 10px;
+    }
+    .read-more-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .testimonials-last-row {
+        flex-direction: column;
+    }
+    .testimonials-col {
+        margin-bottom: 0;
+    }
+    .partner-logo-item {
+        margin-bottom: 10px !important;
+    }
+    .feedback {
+        margin-top: 20px;
+    }
+}

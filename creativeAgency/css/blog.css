@@ -1,0 +1,93 @@
+.hero{
+    height:500px;
+    background-image:url('../assets/img/about/site-hero2.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center right;
+}
+.article {
+    padding: 90px 50px 0;
+}
+.img-wrapper-mountain {
+    background-image: url('../assets/img/mountaines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 750px;
+    height: 500px;
+}
+.info-row {
+    margin-top: 30px;
+}
+.info-row .date {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #7beec7;
+    padding: 0 23px 0 15px;
+    height: 30px;
+}
+.info-row .comments {
+    padding-left: 15px;
+    height: 30px;
+}
+.comments span {
+    margin-right: 8px;
+    width: 15px;
+    color: #cccccc;
+    font-family: Ionicons;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.likes span {
+    margin-right: 8px;
+    width: 16px;
+    color: #ea6a6a;
+    font-family: Ionicons;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.likes {
+    margin-left: 20px;
+    height: 30px;
+}
+.blog-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    max-width: 750px;
+    width: 100%;
+}
+.blog-excerpt {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 750px;
+    width: 100%;
+}
+.count {
+    width: 13px;
+    height: 11px;
+    color: #cccccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.continue-link {
+    color: #60606e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
