@@ -137,6 +137,7 @@ header{
 	line-height: 48px;
 	text-transform: uppercase;
     margin-left: 0;
+    white-space: nowrap;
 }
 .service-description {
 	list-style: none;
@@ -215,7 +216,8 @@ header{
     color: turquoise;
 }
 .btn:hover {
-    color: white;
+    box-shadow: 0 1px 3px #60606e;
+    background-color: #F1F1F1;
 }
   
 /*portfoliio*/
