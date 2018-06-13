@@ -1,5 +1,5 @@
 .first-section{
-    height:500px;
+    height:550px;
     background-image:url('../assets/img/740.jpg');
     background-size: cover;
     background-repeat:no-repeat;
@@ -9,7 +9,7 @@ header{
     height:100px;
 }
 .first-row{
-    margin-top:100px;
+    margin-top:120px;
 }
 .about-heading {
     font-family: 'Montserrat', sans-serif;
@@ -164,7 +164,7 @@ header{
         margin-top: 50px;
     }
     .first-row.about-us-first-row {
-        margin-top:70px;
+        margin-top:100px;
     }
     .about-us-section {
         margin-top: 50px;
@@ -260,9 +260,12 @@ header{
         line-height: 38px;
     }
 }
-@media screen and (max-width:320px){ 
+@media screen and (min-width:320px) and (max-width: 480px){
+    .testimonials-last-row {
+        margin-top: 0;
+    }
     .first-section {
-        height: 200px;
+        height: 400px;
         margin-bottom: 20px;
     }
     .about-heading {
@@ -282,6 +285,7 @@ header{
     }
     .benefits-last-row {
         flex-direction: column;
+        margin-top: 0;
     }
     .resp-col {
         min-width: calc(100% - 15px);
@@ -294,8 +298,12 @@ header{
         margin-top: 10px;
     }
     .read-more-text {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .read-more-container {
+        padding-top: 25px;
+        height: 170px;
     }
     .testimonials-last-row {
         flex-direction: column;
