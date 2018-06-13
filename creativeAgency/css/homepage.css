@@ -461,9 +461,12 @@ input {
 
 }
 
-@media screen and (max-width:320px){
+@media screen and (min-width:320px) and (max-width: 480px){
     .title-description {
         font-size: 12px;
+    }
+    .text-heading {
+        font-size: 22px;
     }
     .first-row {
         margin-top: 0;
@@ -476,6 +479,12 @@ input {
     }
     .title-row {
         margin-bottom: 20px;
+    }
+    .wrapper {
+        flex-direction: column !important;
+    }
+    .container-portfolio {
+        margin-top: 20px;
     }
     .feedback {
         display: flex;

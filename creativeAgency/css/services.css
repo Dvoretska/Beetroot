@@ -11,7 +11,7 @@ header{
 
 /*what we do*/
 .what-we-do {
-    margin-top: 140px;
+    margin-top: 100px;
 }
 .image-wrapper-service{
     height:364px;
@@ -48,8 +48,8 @@ header{
 
 /*advantages*/
 .advantages {
-    padding-top: 150px;
-    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .advantages .icon {
     color: #60606e;
@@ -190,7 +190,7 @@ header{
 /*pricing-plans*/
 
 .feedback {
-    margin-top: 110px;
+    margin-top: 100px;
 }
 
 @media screen and (max-width:991px){
@@ -200,9 +200,7 @@ header{
     .what-we-do {
         margin-top: 50px;
     }
-    .first-row{
-        margin-top:70px;
-    }
+
     .title-row {
         margin-bottom: 40px;
     }
@@ -236,7 +234,6 @@ header{
         margin-top: 50px;
     }
     .plan-col:nth-child(3) {
-        margin-top: 20px;
         max-width: calc(50% - 30px);
     }
     
@@ -257,7 +254,6 @@ header{
         height:200px;
     }
     .plan-col:nth-child(3) {
-        margin-top: 20px;
         max-width: calc(50% - 30px);
     }
     .cta {
@@ -286,6 +282,10 @@ header{
     .plan-col:nth-child(1), .plan-col:nth-child(2) {
         margin-bottom: 10px;
     }
+    .plan-col:nth-child(3) {
+        margin-top: 20px;
+        max-width: calc(50% - 60px);
+    }
     .advantages .icon {
         margin-bottom: 20px;
     }
@@ -293,7 +293,7 @@ header{
         height: 350px;
     }
     .first-row {
-        margin-top: 50px;
+        margin-top: 80px;
     }
      .what-we-do-row2{
         min-width: inherit;
@@ -302,7 +302,7 @@ header{
         line-height: 25px;
     }
 }
-@media screen and (max-width:320px){
+@media screen and (min-width:320px) and (max-width: 480px){
     .plan-col:nth-child(3) {
         margin-top: 0;
         max-width: calc(100% - 30px);
