@@ -1,50 +1,36 @@
-var portfolio = document.getElementsByClassName('portfolio')[0];
-var cv = document.getElementsByClassName('cv')[0];
-var contact = document.getElementsByClassName('contact')[0];
-var arrow = document.getElementsByClassName('arrow-left');
-var cvSection = document.getElementsByClassName('home-cv')[0];
-var portfolioSection = document.getElementsByClassName('home-portfolio')[0];
-var contactSection = document.getElementsByClassName('home-contact')[0];
-var sections =  document.getElementsByClassName('span7');
-
-document.addEventListener("DOMContentLoaded", function() {
-	displaySection('home-cv')
-	var menuItems = document.getElementsByClassName('nav-item');
-	for(var i = 0; i < menuItems.length; i++) {
-		menuItems[i].addEventListener('click', function() {
-			for(var j = 0; j < menuItems.length; j++) {
-				menuItems[j].classList.remove('active');
-			}
-			this.classList.add('active');
-		})
-	}
+$(document).on('click', 'a[href^="#"]', function(e) {
+    var id = $(this).attr('href');
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+    e.preventDefault();
+    var pos = $id.offset().top;
+    $('body, html').animate({scrollTop: pos}, 'slow');
 });
 
-function setArrow(id) {
-	for(var i =0; i < arrow.length; i++) {
-		arrow[i].style.display = 'none';
-		if(arrow[i].dataset.id == id) {
-			arrow[i].style.display = 'inline-block';
-		}
-	}
-}
-function displaySection(section) {
-	for(var i =0; i < sections.length; i++) {
-		sections[i].style.display = 'none';
-		if(sections[i].className.includes(section)) {
-			sections[i].style.display = 'block';
-		}
-	}
-}
-cv.addEventListener('click', function() {
-	setArrow(this.getAttribute('id'))
-	displaySection('home-cv')
-})
-portfolio.addEventListener('click', function() {
-	setArrow(this.getAttribute('id'))
-	displaySection('home-portfolio')
-})
-contact.addEventListener('click', function() {
-	setArrow(this.getAttribute('id'))
-	displaySection('home-contact')
-})
+$(window).scroll(function() {
+    let topSkillsMenu = $('.skills-menu').offset().top;
+    let bottomSkillsMenu = $('.skills-menu').offset().top + $('.skills-menu').outerHeight();
+	  let topWorkDot = $('.work-dot').offset().top;
+    let bottomWorkDot = $('.work-dot').offset().top + $('.work-dot').outerHeight();
+	  let topEdDot = $('.ed-dot').offset().top;
+    let bottomEdDot = $('.ed-dot').offset().top + $('.ed-dot').outerHeight();
+    let screenBottom = $(window).scrollTop() + $(window).innerHeight();
+    let screenTop = $(window).scrollTop();
+    if ((screenBottom > topSkillsMenu) && (screenTop < bottomSkillsMenu)){
+        $('.fill').addClass('animated');
+    } else {
+        $('.fill').removeClass('animated');
+    }
+    if ((screenBottom > topWorkDot) && (screenTop < bottomWorkDot)){
+        $('.work-dot').addClass('dot-animated');
+    } else {
+        $('.work-dot').removeClass('dot-animated');
+    }
+    if ((screenBottom > topEdDot) && (screenTop < bottomEdDot)){
+        $('.ed-dot').addClass('dot-animated');
+    } else {
+        $('.ed-dot').removeClass('dot-animated');
+    }
+});

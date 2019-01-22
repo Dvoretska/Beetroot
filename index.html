@@ -3,84 +3,256 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="./portfolio/img/favicon-16x16.png"/>
 <title>Portfolio</title>
-<link rel="icon" href="portfolio/img/Hydrattz-Multipurpose-Alphabet-Letter-D-blue.ico">
-<link rel="stylesheet" type="text/css" href="portfolio/css/myStyle.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="portfolio/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <div class="span3"> 
-      <div class="avatar"></div>
-        <nav class="navigation cl-effect-2">
-          <a class="nav-item cv active" id="cv-item">
-            <span data-hover="About Me" class="nav-span">About Me</span>
-            <span data-id="cv-item" class="arrow-left"></span>
-          </a>
-          <a class="nav-item portfolio" id="portfolio-item">
-            <span data-hover="Portfolio" class="nav-span">Portfolio</span>
-            <span data-id="portfolio-item" class="arrow-left"></span>
-          </a>
-          <a class="nav-item contact" id="contact-item">
-            <span data-hover="Contact" class="nav-span">Contact</span>
-            <span data-id="contact-item" class="arrow-left"></span>
-          </a>
-        </nav>
-        <span class="span-icons bottom-position">
-          <a href="https://www.linkedin.com/in/daria-dvoretska-340b74146/">
-            <img src="portfolio/img/linkedin-button.svg" alt="" class="social-icon">
-          </a>
-          <a href="https://github.com/Dvoretska">
-            <img src="portfolio/img/github2.svg" alt="" class="social-icon">
-          </a>
-          <a href="https://www.facebook.com/chelsea.smile.543">
-            <img src="portfolio/img/facebook-logo-in-circular-button-outlined-social-symbol.svg" alt="" class="social-icon">
-          </a>
-        </span>
-    </div>
-    <div class="span7 home-cv">
-      <h1 class="about-title">Hi! I'm Dasha Dvoretskaya</h1>
-      <p class="about-description">I'm Frontend developer with
-        a passion for creating fully responsive, adaptive, interactive and modern websites.
-        As a web developer I use my attention to details, my love for learning and exploring
-        new technologies, my desire to make simple and elegant things.
-        Currently I’m seeking a position with a good company
-        for growth and advancement.</p>
-      <hr>
-      <h2 class="about-subtitle">My core skills:</h2>
-      <ul class="skills-menu">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bootstrap</li>
-        <li>SCSS</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Git</li>
-        <li>Vue js</li>
+  <div class="container">
+    <header class="cv-header">
+      <div class="layer"></div>
+      <img src="./portfolio/img/ava.jpg" alt="" class="avatar">
+      <h1 class="header-title">Dasha Dvoretskaya</h1>
+      <h2 class="header-prof">Frontend Developer</h2>
+      <ul class="header-menu">
+        <li>Kiev</li>
+        <li>095 435 22 47</li>
+        <li>dvoretska4@gmail.com</li>
       </ul>
-      <hr>
-      <div class="wrapper">
-        <h2 class="about-subtitle">Working experience:</h2>
-        <h3 class="subtitle-description">Upwork, Frontend developer</h3>
-        <p class="subtitle-text">I have been working about half a year as a Frontend developer using Vue js framework on Upwork.</p>
-      </div>
-      <hr>
-      <h2 class="about-subtitle">Education:</h2>
-      <h3 class="subtitle-description">Complete higher education:
-        Zaporizhzhya National Technical University, Electrical engineering department.</h3>
-      <h4 class="subtitle-date">September 2007 — June 2012</h4>
-      <hr>
-      <h2 class="about-subtitle">Additional education:</h2>
-
-      <h4 class="subtitle-description">Beetroot Аcademy, Front-end development, Zaporizhzhya.</h4>
-      <h4 class="subtitle-date">January 2018 — May 2018</h4>
-      <p class="subtitle-text">I studied HTML5, CSS3, JavaScript, jQuery, Git, Bootstrap and React js.</p>
-      <br>
-      <br>
-      <h4 class="subtitle-description">American English Center</h4>
-      <h4 class="subtitle-date">December 2017 - May 2018</h4>
-      <span class="subtitle-text">My level of English: Intermediate - Upper-Intermediate.</span>
+    </header>
+    <nav class="cv-navigation">
+      <ul class="cv-menu">
+        <li>
+          <a href="#summary-section">Summary</a>
+        </li>
+        <li>
+          <a href="#skills-section">Skills</a>
+        </li>
+        <li>
+          <a href="#work-section">Work experience</a>
+        </li>
+        <li>
+          <a href="#education-section">Education</a>
+        </li>
+        <li>
+          <a href="">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sections-container">
+      <section id="summary-section">
+        <h3 class="section-title">Summary</h3>
+        <p class="summary-description">I'm Frontend developer with
+          a passion for creating fully responsive, adaptive, interactive and modern websites.
+          As a web developer I use my attention to details, my love for learning and exploring
+          new technologies, my desire to make simple and elegant things.
+          Currently I’m seeking a position with a good company
+          for growth and advancement.</p>
+      </section>
+      <section id="skills-section">
+        <h3 class="section-title">Skills</h3>
+        <ul class="skills-menu">
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>HTML</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>CSS</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>Bootstrap</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>SCSS</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>JavaScript</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>Angular 2/6</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>Vue js</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>React</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>Node js</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>Postgres</span>
+          </li>
+          <li>
+            <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>Git</span>
+          </li>
+          <li>
+             <div class='loading'>
+              <div class='outer-shadow'></div>
+              <div class='inner-shadow'></div>
+              <div class='hold left'>
+                <div class='fill'></div>
+              </div>
+              <div class='hold right'>
+                <div class='fill'></div>
+              </div>
+            </div>
+            <span>jQuery</span>
+          </li>
+        </ul>
+      </section>
+      <section id="work-section">
+        <h3 class="section-title">Work experience</h3>
+        <div class="block-wrapper">
+          <div class="block-info">
+            <div class="block-title">FreshCode IT</div>
+            <div class="block-date">July 2018 - January 2019</div>
+          </div>
+          <div class="block-description"><span class="work-dot first-dot"></span>Angular 6 / Node js / PostgreSQL developer.</div>
+        </div>
+        <div class="block-wrapper">
+          <div class="block-info">
+            <div class="block-title">Upwork</div>
+            <div class="block-date">September 2017 - March 2018</div>
+          </div>
+          <div class="block-description"><span class="work-dot second-dot"></span>Vue js developer.</div>
+        </div>
+      </section>
+      <section id="education-section">
+        <h3 class="section-title">Education</h3>
+        <div class="block-wrapper">
+          <div class="block-info">
+            <div class="block-title">Beetroot Аcademy</div>
+            <div class="block-date">January 2018 — May 2018</div>
+          </div>
+          <div class="block-description"><span class="ed-dot first-dot"></span>Course of Frontend development (HTML5, CSS3, JavaScript, jQuery, Git, Bootstrap).</div>
+        </div>
+        <div class="block-wrapper">
+          <div class="block-info">
+            <div class="block-title">American English Center</div>
+            <div class="block-date">December 2017 - May 2018</div>
+          </div>
+          <div class="block-description"><span class="ed-dot second-dot"></span>Course of intermediate - upper-intermediate level of English.</div>
+        </div>
+        <div class="block-wrapper">
+          <div class="block-info">
+            <div class="block-title">Zaporizhzhya National Technical University</div>
+            <div class="block-date">September 2007 — June 2012</div>
+          </div>
+          <div class="block-description"><span class="ed-dot third-dot"></span>Complete higher education, Electrical engineering department.</div>
+        </div>
+      </section>
     </div>
 
     <div class="span7 home-portfolio">
@@ -96,21 +268,6 @@
         <hr>
       <p class="about-subtitle">Beetroot academy<span class="beetroot">(mockup examples)</span></p>
         <ul class="portfolio-list">
-          <li class="webdesign">
-              <a  href="Productman/productman.html" title="Productman">
-                <img src="portfolio/img/portfolio/productman.png" alt="Productman">
-              </a>
-          </li>
-           <li class="webdesign">
-              <a  href="travel-agency/index.html" title="Travel Agency">
-                <img src="portfolio/img/portfolio/travel_agency.png" alt="Travel Agency">
-              </a>
-          </li>
-          <li class="webdesign">
-              <a  href="design-lab/index.html" title="Design Lab">
-                <img src="portfolio/img/portfolio/design-lab.png" alt="Design Lab">
-              </a>
-          </li>
           <li class="webdesign">
               <a  href="Bouncy/index.html" title="Bouncy">
                 <img src="portfolio/img/portfolio/Bouncy.png" alt="Bouncy">
@@ -128,37 +285,21 @@
           </li>
         </ul>
       </div>      
-    </div>
-    <div class="span7 home-contact">
-      <p class="contact-wrapper">
-        <span class="span-title">PHONE:</span>
-        <span>+38 093 489 04 36</span>
-      </p>
-      <p class="contact-wrapper">
-        <span class="span-title">EMAIL:</span>
-        <span>dvoretska4@gmail.com</span>
-      </p>
-      <p class="contact-wrapper">
-        <span class="span-title">ADDRESS:</span>
-        <span>Zaporizhzhya</span>
-      </p>
-      <p class="contact-wrapper">
-        <span class="span-title">SOCIAL:</span>
-        <span class="span-icons">
-          <a href="https://www.linkedin.com/in/daria-dvoretska-340b74146/">
-            <img src="portfolio/img/linkedin.svg" alt="" class="social-icon">
-          </a>
-          <a href="https://github.com/Dvoretska">
-            <img src="portfolio/img/github.svg" alt="" class="social-icon">
-          </a>
-          <a href="https://www.facebook.com/chelsea.smile.543">
-            <img src="portfolio/img/facebook.svg" alt="" class="social-icon">
-          </a>
-        </span>
-      </p>
+    </section>
+    <div class="cv-contact">
+      <a class="contact-link" href="https://www.linkedin.com/in/daria-dvoretska-340b74146/">
+        <img src="portfolio/img/linkedin.svg" alt="" class="social-icon">
+      </a>
+      <a class="contact-link" href="https://github.com/Dvoretska">
+        <img src="portfolio/img/github.svg" alt="" class="social-icon">
+      </a>
+      <a class="contact-link" href="https://www.facebook.com/chelsea.smile.543">
+        <img src="portfolio/img/facebook.svg" alt="" class="social-icon">
+      </a>
     </div>
 </div>
-<script src="portfolio/script.js" defer></script>
+<script src="portfolio/jquery-3.3.1.min.js"></script>
+<script src="portfolio/script.js"></script>
 </body>
 </html>
 
