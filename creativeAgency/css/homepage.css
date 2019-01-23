@@ -65,6 +65,7 @@ header{
     position:relative;
     z-index:1;
     margin-bottom:25px;
+    padding-left: 25px;
 }
 .text-heading:before{
     content:"";
@@ -263,7 +264,6 @@ header{
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-    margin-left: 25px;
     margin-top: 9px;
 }
 .default-text-in {
@@ -272,11 +272,9 @@ header{
     font-weight: 400;
     line-height: 24px;
     padding: 0 10px;
-    margin-left: 25px;
     margin-bottom: 15px;
 }
 input {
-    margin-left: 20px;
     height: 50px;
 }
 .form-control {
@@ -332,6 +330,9 @@ input {
 /* footer */
 
 @media screen and (max-width:991px){
+    #navbarNav {
+        background-color: white;
+    }
     .why-choose-us {
         margin-top: 0;
     }
@@ -356,7 +357,7 @@ input {
     }
     .hero-description{
         padding-top:0;
-        margin-left: 25px;
+        padding-left: 25px;
     }
     .first-row{
         margin-top:90px;
@@ -404,6 +405,12 @@ input {
     }
 }
 @media screen and (max-width:767px){
+    .hero {
+        height: auto;
+    }
+    .text-heading {
+        margin-top: 30px;
+    }
     .grey-border-text {
         font-size: 32px;
     }
@@ -432,6 +439,16 @@ input {
     }
     .default-text-in {
         font-size: 14px;
+    }
+    .email-block {
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+    }
+    .email-block input {
+        margin-left: 0;
+        width: 90% !important;
+        margin-bottom: 10px !important;
     }
 
 }

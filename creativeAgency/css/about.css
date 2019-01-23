@@ -100,21 +100,27 @@ header{
     margin-top: 30px;
 }
 .read-more-container {
-    height: 150px;
     background-color: #EFEEF0;
     margin-left: 15px;
     margin-right: 15px;
     position: relative;
-    padding-left: 30px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
 }
 .read-more-text {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: italic;
     line-height: 48px;
+    margin-bottom: 10px;
 }
-.green-button {
-    right: 30px;
+.button-wrapper {
+    width: 100%;
+    text-align: right;
+}
+.read-button {
+    position: static;
 }
 /*read more*/
 
@@ -194,12 +200,6 @@ header{
     .gallery-item:last-child, .gallery-item:nth-child(2) {
         text-align: right;
     }
-    .read-more-container {
-        flex-direction: column;
-    }
-    .read-more-container .green-button {
-        bottom: 10px;
-    }
     .testimonials {
         margin-top: 50px;
     }
@@ -253,9 +253,6 @@ header{
     .testimonials-last-row .partner-logo-item:nth-child(2) {
         margin-left: 0;
     }
-    .read-more-container {
-        height: 200px;
-    }
     .read-more-text {
         line-height: 38px;
     }
@@ -300,10 +297,6 @@ header{
     .read-more-text {
         font-size: 16px;
         line-height: 24px;
-    }
-    .read-more-container {
-        padding-top: 25px;
-        height: 170px;
     }
     .testimonials-last-row {
         flex-direction: column;
