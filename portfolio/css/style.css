@@ -364,6 +364,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 .contact-link {
     display: inline-block;
@@ -385,6 +386,7 @@ ul {
 .item-link {
     width: 130px;
     height: 130px;
+    flex-shrink: 0;
     cursor: pointer;
     display: inline-block;
     margin-right: 15px;
@@ -394,10 +396,10 @@ ul {
     height: 100%;
 }
 .item-description {
+    margin-top: 10px;
     flex: 1;
-    color: #666;
     font-family: 'PT Sans', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -462,6 +464,9 @@ ul {
     }
     .skills-menu li span {
         font-size: 16px;
+    }
+    .item-wrapper {
+        flex-direction: column;
     }
 }
 
